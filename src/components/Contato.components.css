@@ -20,8 +20,8 @@
   background: #005E7C;
 }
 :root{
-  --primary: #005E7C;
-  --secondary: #0094C6;
+  --primary: #800100;
+  --secondary: #7e2121;
   --tertiary: rgb(233, 233, 233);
 }
 .text-secondary{
