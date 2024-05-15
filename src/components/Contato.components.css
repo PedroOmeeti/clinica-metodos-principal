@@ -17,11 +17,11 @@
 }
 
 .Background-Conteudo {
-  background: #b4023d;
+  background: #800100;
 }
 :root{
-  --primary: #800100;
-  --secondary: #b4023d;
+  --primary:  #5f5f5f;
+  --secondary: #800100;
   --tertiary: rgb(233, 233, 233);
 }
 .text-secondary{
