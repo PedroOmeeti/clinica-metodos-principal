@@ -15,13 +15,13 @@ function NavA() {
  
 
   return (
-    <div>
-      <Navbar expand="md bg-light">
-        <Col >
-          <Link className='navbar-brand cor-texto' to="/"><MdHealthAndSafety className='mb-1 me-1' />Métodos Clínica</Link>
+    <div className=''>
+      <Navbar expand="md bg-light" className='p-5'>
+        <Col className='ms-5' >
+          <Link id='titulo' className='navbar-brand cor-texto' to="/"><MdHealthAndSafety className='mb-1 me-1' />Métodos Clínica</Link>
         </Col>
         
-        <Nav className="me-auto d-md-row" navbar>
+        <Nav id='titulo2' className="me-auto d-md-row justify-content-around'" navbar>
           <NavItem>
             <Link className='nav-link cor-texto' to="/">Clínica</Link>
           </NavItem>
