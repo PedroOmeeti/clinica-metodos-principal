@@ -11,17 +11,17 @@
   height:330px;
   width:100%;
   border-radius: 17px;
-  background: #005E7C;
-  box-shadow:  17px 17px 40px #003f53,
-             -17px -17px 40px #007da5;
+  background: #800100;
+  box-shadow:  17px 17px 40px #6d0100,
+              -17px -17px 40px #930100;
 }
 
 .Background-Conteudo {
-  background: #005E7C;
+  background: #b4023d;
 }
 :root{
-  --primary: #005E7C;
-  --secondary: #0094C6;
+  --primary: #800100;
+  --secondary: #b4023d;
   --tertiary: rgb(233, 233, 233);
 }
 .text-secondary{
