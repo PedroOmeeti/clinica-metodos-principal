@@ -1,0 +1,41 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+
+#gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:330px;
+  width:100%;
+  border-radius: 17px;
+  background: #005E7C;
+  box-shadow:  17px 17px 40px #003f53,
+             -17px -17px 40px #007da5;
+}
+
+.Background-Conteudo {
+  background: #005E7C;
+}
+:root{
+  --primary: #005E7C;
+  --secondary: #0094C6;
+  --tertiary: rgb(233, 233, 233);
+}
+.text-secondary{
+  color: var(--secondary) !important;
+}
+.bg-secondary{
+  background-color: var(--secondary) !important;
+}
+.text-tertiary{
+  color: var(--tertiary) !important;
+}
+.fundoAgenda{
+  background-color: rgb(213, 212, 212);
+}
+.bg-tertiary{
+  background-color: var(--tertiary) !important;
+}

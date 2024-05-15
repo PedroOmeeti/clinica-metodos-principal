@@ -1,0 +1,17 @@
+:root{
+  --primary: #005E7C;
+  --secondary: #0094C6;
+  --tertiary: #001242;
+}
+.text-secondary{
+  color: var(--secondary) !important;
+}
+.secondary{
+  background-color: var(--secondary) !important;
+}
+.primary{
+  background-color: var(--primary) !important;
+}
+.tertiary{
+  background-color: var(--tertiary) !important;
+}

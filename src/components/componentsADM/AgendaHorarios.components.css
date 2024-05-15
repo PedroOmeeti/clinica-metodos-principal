@@ -1,0 +1,33 @@
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule th,
+  .schedule td {
+    border: 1px solid #c7c7c7;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .schedule th {
+    background-color: #ffffff;
+    font-weight: normal;
+  }
+  
+  .schedule .time-column {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .schedule .event {
+    margin-bottom: 8px;
+  }
+  
+  .schedule .event:last-child {
+    margin-bottom: 0;
+  }
+
+  .fundoTable{
+    background-color: #123212;
+  }

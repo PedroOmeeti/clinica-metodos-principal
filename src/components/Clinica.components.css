@@ -1,0 +1,15 @@
+.Image-height {
+    max-width: 680px;
+    width: 100%;
+}
+
+.tamanho {
+    max-width: 100px;
+}
+
+.fundin {   
+    border-radius: 0px;
+background: #005E7C;
+box-shadow:  13px 13px 26px #d0d0d0,
+             -13px -13px 26px #f0f0f0;
+}
