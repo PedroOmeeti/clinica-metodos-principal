@@ -16,20 +16,20 @@ function NavA() {
 
   return (
     <div>
-      <Navbar expand="md secondary">
+      <Navbar expand="md bg-light">
         <Col >
-          <Link className='navbar-brand text-white' to="/"><MdHealthAndSafety className='mb-1 me-1' />Clínica Renovar Saúde</Link>
+          <Link className='navbar-brand cor-texto' to="/"><MdHealthAndSafety className='mb-1 me-1' />Métodos Clínica</Link>
         </Col>
         
         <Nav className="me-auto d-md-row" navbar>
           <NavItem>
-            <Link className='nav-link text-white' to="/">Clínica</Link>
+            <Link className='nav-link cor-texto' to="/">Clínica</Link>
           </NavItem>
           <NavItem>
-            <Link className='nav-link text-white' to="/Contato">Contato</Link>
+            <Link className='nav-link cor-texto' to="/Contato">Contato</Link>
           </NavItem>
           <NavItem>
-            <Link className='nav-link text-white' to="/Agende">Agende</Link>
+            <Link className='nav-link cor-texto' to="/Agende">Agende</Link>
           </NavItem>
           <NavItem>
             <ModalLogin />
