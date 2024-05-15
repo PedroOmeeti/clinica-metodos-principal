@@ -75,7 +75,7 @@ function Clinica() {
         <Row className="mt-4">
           <Col></Col>
           <Col>
-            <Link className='nav-link LoginColor fs-4 text-center p-3 rounded-3 my-3 text-white secondary' to="/Contato">Onde estamos localizados</Link>
+            <Link className='nav-link fundin fs-4 text-center p-3 rounded-3 my-3 text-white' to="/Contato">Onde estamos localizados</Link>
           </Col>
           <Col></Col>
         </Row>
