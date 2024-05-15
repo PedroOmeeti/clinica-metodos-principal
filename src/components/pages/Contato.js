@@ -49,43 +49,43 @@ function Contato() {
             <p>
               <p className="h5">Telefone</p>
             </p>
-            <p><FaPhoneAlt className="p-0 text-secondary"/> (12) 4657-2311</p>
+            <p><FaPhoneAlt className="p-0 text-secondary"/> (12) 3643-7796</p>
             <hr />
             <p className="h5">Whatsapp</p>
-            <p><FaWhatsapp className="p-0 text-secondary"/> (12) 99786-5543</p>
+            <p><FaWhatsapp className="p-0 text-secondary"/> (12) 99644-8045</p>
             <hr />
             <p className="h5">E-mail</p>
-            <p><FaEnvelope className="p-0 text-secondary"/> clinicarenovar@gmail.com</p>
+            <p><FaEnvelope className="p-0 text-secondary"/> metodosclinicarecepcao@outlook.com</p>
             <hr />
             <p className="h4">Nos siga nas redes sociais</p>
-            <a className="fs-1"><FaInstagram className="p-0 text-secondary" /></a>
-            <a className="fs-1"><FaFacebookSquare className="p-0 ms-2 text-secondary" /></a>
+            <a className="fs-1" href="https://www.instagram.com/metodosclinica/" target="_blank"><FaInstagram className="p-0 text-secondary" /></a>
+            <a className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare className="p-0 ms-2 text-secondary" /></a>
           </Col>
         </Row>
       </Container>
       <Container fluid className="Background-Conteudo text-white pb-3">
         <Container>
           <Row>
-            <Col xs='12' sm='6'>
+            <Col xs='12' sm='6' className="mt-5 p-5">
                 <p className="text-center fs-1"><FaHandHoldingMedical /></p>
               
-                <p className="h5">Clinica Renovar Saude Centro</p>
+                {/* <p className="h5">Clinica Renovar Saude Centro</p>
                 <p><FaMapMarkerAlt /> R. Estela, 116 - Centro, pindamonhangaba - SP, 12404-200</p>
                 <p><FaPhoneAlt /> (12) 8547-3322</p>
-                <hr/>
+                <hr/> */}
                 <p className="h5">Clinica Renovar Saude Crispim</p>
-                <p><FaMapMarkerAlt /> Av. dos Autonomistas, 896, Crispim, pindamonhangaba - SP, 12404-372</p>
-                <p><FaPhoneAlt /> (12) 4002-8922</p>
+                <p><FaMapMarkerAlt /> R. Manoel Cembraneli, 225 - Chácara Galega, Pindamonhangaba - SP, 12422-200</p>
+                <p><FaPhoneAlt /> (12) 3643-7796</p>
                 <hr/>
-                <p className="h5">Clinica Renovar Saude Taubaté</p>
+                {/* <p className="h5">Clinica Renovar Saude Taubaté</p>
                 <p><FaMapMarkerAlt /> Av. dos Autonomistas, 896, Centro, Taubaté - SP, 12404-372</p>
-                <p><FaPhoneAlt /> (12) 4002-8922</p>
+                <p><FaPhoneAlt /> (12) 4002-8922</p> */}
             </Col>
-            <Col className="d-flex align-self-center" xs='12' sm='6'>
+            <Col className="d-flex align-self-center mt-5 mb-5" xs='12' sm='6'>
               <div className="mapouter">
                   <div className="gmap_canvas">
-                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=pindamonhangaba, centro&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  
+                    
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rua%20Manoel%20Cembranelli,%20225,%20Ch%C3%A1cara%20Galega,%20Pindamonhangaba,%20SP,%20Brazil+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     
                   </div>
                 </div>
