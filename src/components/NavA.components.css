@@ -3,14 +3,29 @@
   font-weight: bold;
   /* font-size: 10px; */
 }
-#titulo{
-  font-size: 30px;
+
+#logo{
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
 }
-#titulo2{
+
+#logo:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#barra {
   font-size: 20px;
 }
 
-/* butal */
-.brutal{
-  background-color: white ;
+#menu {
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  background: #FFFFFF;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0px 0px 8px 2px #c9c9c9;
+
 }
+
+#menu:hover {}
