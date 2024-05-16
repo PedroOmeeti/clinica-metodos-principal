@@ -18,8 +18,8 @@ function MenuFooter(){
                     <Col xs='12' sm="4" className=''>
                         <p className='fs-5'>Nossas Redes Sociais</p>
                         <div className='text-start mt-3'>
-                            <p><FaEnvelope/> clinicarenovar@gmail.com</p>
-                            <p><FaFacebookSquare/> Clinica Renovar Pinda</p>
+                            <p><FaEnvelope/> metodosclinicarecepcao@outlook.com</p>
+                            <p><FaFacebookSquare/> Métodos Clínica</p>
                             <p><FaInstagram/> @clinicarenovar</p>
                             <p><FaWhatsapp/> (12) 99590-8846</p>
                         </div>
