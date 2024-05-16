@@ -1,4 +1,16 @@
 .cor-texto {
   color: #800100;
   font-weight: bold;
+  /* font-size: 10px; */
+}
+#titulo{
+  font-size: 30px;
+}
+#titulo2{
+  font-size: 20px;
+}
+
+/* butal */
+.brutal{
+  background-color: white ;
 }
