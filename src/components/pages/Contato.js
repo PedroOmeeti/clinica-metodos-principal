@@ -68,7 +68,7 @@ function Contato() {
           <Row>
             <Col xs='12' sm='6' className="mt-5 p-5">
                 <p className="text-center fs-1"><FaHandHoldingMedical /></p>
-              
+                <hr/>              
                 {/* <p className="h5">Clinica Renovar Saude Centro</p>
                 <p><FaMapMarkerAlt /> R. Estela, 116 - Centro, pindamonhangaba - SP, 12404-200</p>
                 <p><FaPhoneAlt /> (12) 8547-3322</p>

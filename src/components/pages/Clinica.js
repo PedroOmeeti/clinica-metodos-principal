@@ -11,8 +11,13 @@ import '../Clinica.components.css'
 import { Link } from "react-router-dom";
 import '../Contato.components.css'
 import { RiPsychotherapyLine } from "react-icons/ri";
-import { FaHandHoldingMedical } from "react-icons/fa6";
+// import { FaHandHoldingMedical } from "react-icons/fa6";
 import { GiMedicines } from "react-icons/gi";
+import { IoNutritionOutline } from "react-icons/io5";
+import { MdHearing } from "react-icons/md";
+import { MdPsychology } from "react-icons/md";
+
+
 
 function Clinica() {
   return (
@@ -49,10 +54,13 @@ function Clinica() {
             </Col>
             
             <Col className="text-center fs-5">
-              <FaHandHoldingMedical className="fs-1" /> 
+              <IoNutritionOutline className="fs-1" /> 
             </Col>
             <Col className="text-center fs-4">
-              <GiMedicines className="fs-1" />
+              <MdHearing className="fs-1" />
+            </Col>
+            <Col className="text-center fs-4">
+              <MdPsychology className="fs-1" />
             </Col>
           </Row>
           <Row>
@@ -60,10 +68,13 @@ function Clinica() {
               Psicologia  
             </Col>
             <Col className="text-center fs-4">
-              Dermatologia 
+              Nutrição 
             </Col>
             <Col className="text-center fs-4">
-              Ortopedia   
+              Fonoaudiologia   
+            </Col>
+            <Col className="text-center fs-4">
+              Psiquiatria   
             </Col>
             
           </Row>
