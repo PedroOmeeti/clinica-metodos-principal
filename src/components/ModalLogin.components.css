@@ -15,3 +15,17 @@
 .tertiary{
   background-color: var(--tertiary) !important;
 }
+
+#icone:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: rgb(196, 8, 8);
+  
+  
+}
+#icone{
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .1s ease;
+  width: 20%;
+  font-size: 18px;
+}

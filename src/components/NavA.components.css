@@ -7,6 +7,7 @@
 #logo{
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
+  width: 15%;
 }
 
 #logo:hover{
@@ -14,8 +15,22 @@
   transform: scale(1.1);
 }
 
+#roter  {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .1s ease;
+  width: 20%;
+  
+}
+
+#roter:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: rgb(196, 8, 8);
+}
+
+
 #barra {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 #menu {
@@ -25,6 +40,7 @@
   background: #FFFFFF;
   border-bottom: 1px solid #ffffff;
   box-shadow: 0px 0px 8px 2px #c9c9c9;
+  margin-bottom: 2px;
 
 }
 
