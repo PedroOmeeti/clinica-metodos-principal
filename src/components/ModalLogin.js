@@ -15,8 +15,8 @@ function ModalLogin(args) {
 
   return (
     <div>
-      <a className='nav-link text-white' color="danger" onClick={toggle}>
-        <bold><FaRegUser color='#800100' /></bold>
+      <a id='icone' className='nav-link text-white' color="danger" onClick={toggle}>
+        <bold ><FaRegUser color='#800100' /></bold>
       </a>
       <Modal isOpen={modal} toggle={toggle} {...args}>
         <ModalHeader toggle={toggle} className='text-center'><FaUserAlt /> Login</ModalHeader>

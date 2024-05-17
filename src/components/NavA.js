@@ -17,20 +17,20 @@ function NavA() {
 
   return (
     <div className=''>
-      <Navbar id='menu' expand="md bg-light" className='p-5 mb-5'>
+      <Navbar id='menu' expand="md bg-light" className='p-5'>
         <Col className='ms-5' >
-            <Link className='navbar-brand cor-texto' to="/"><img id='logo' src={Logo} width={400}></img></Link>
+            <Link className='navbar-brand cor-texto' to="/"><img id='logo' src={Logo} ></img></Link>
         </Col>
 
         <Nav id='barra' className="me-auto d-md-row justify-content-around'" navbar>
           <NavItem>
-            <Link className='nav-link cor-texto' to="/">Clínica</Link>
+            <Link id='roter' className='nav-link cor-texto' to="/">Clínica</Link>
           </NavItem>
           <NavItem>
-            <Link className='nav-link cor-texto' to="/Contato">Contato</Link>
+            <Link id='roter' className='nav-link cor-texto' to="/Contato">Contato</Link>
           </NavItem>
           <NavItem>
-            <Link className='nav-link cor-texto' to="/Agende">Agende</Link>
+            <Link id='roter' className='nav-link cor-texto' to="/Agende">Agende</Link>
           </NavItem>
           <NavItem>
             <ModalLogin />
