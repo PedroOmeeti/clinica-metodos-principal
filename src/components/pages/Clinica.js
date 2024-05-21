@@ -12,12 +12,11 @@ import { Link } from "react-router-dom";
 import '../Contato.components.css'
 import { RiPsychotherapyLine } from "react-icons/ri";
 // import { FaHandHoldingMedical } from "react-icons/fa6";
-import { GiMedicines } from "react-icons/gi";
 import { IoNutritionOutline } from "react-icons/io5";
 import { MdHearing } from "react-icons/md";
 import { MdPsychology } from "react-icons/md";
-
-
+import { MdOutlinePsychology } from "react-icons/md";
+import { FaHandsHoldingChild } from "react-icons/fa6";
 
 function Clinica() {
   return (
@@ -60,7 +59,10 @@ function Clinica() {
               <MdHearing className="fs-1" />
             </Col>
             <Col className="text-center fs-4">
-              <MdPsychology className="fs-1" />
+              <MdOutlinePsychology className="fs-1" />
+            </Col>
+            <Col className="text-center fs-4">
+              <FaHandsHoldingChild className="fs-1" />
             </Col>
           </Row>
           <Row>
@@ -75,6 +77,9 @@ function Clinica() {
             </Col>
             <Col className="text-center fs-4">
               Psiquiatria   
+            </Col>
+            <Col className="text-center fs-4">
+              Psicopedagogia   
             </Col>
             
           </Row>
