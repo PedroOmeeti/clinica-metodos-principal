@@ -1,46 +1,49 @@
-import { Link } from 'react-router-dom'
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import {
   Navbar,
   Nav,
   NavItem,
   Col,
 } from 'reactstrap';
-import './SweetAlert.components.css'
-import Swal from 'sweetalert2'
-// import withReactContent from 'sweetalert2-react-content'
-
+import './SweetAlert.components.css';
+import Swal from 'sweetalert2';
 
 
 function Sweet() {
- 
-  function alert(){
+  const navigate = useNavigate(); 
+  //Obtém a função de navegação
+
+  function showAlert() {
     Swal.fire({
-      title: "Já está indo embora?",
+      title: "Você ainda está ai?",
       text: "Agende sua consulta",
       icon: "question",
-      showCancelButton: true
-    }
-    ).then((result) => {
-      if (result.iDismissed) {
-        alert('cancelou');
+      showCancelButton: true,
+      confirmButtonText: 'Agendar agora',
+      cancelButtonText: 'Cancelar',
+      confirmButtonColor: '#9D1A1F',
+      iconColor: '#9D1A1F',
+      
+    }).then((result) => {
+      if (result.isConfirmed) {
+       //Navega para outra página ao confirmar
+        navigate('Agende'); //Substitue pelo seu caminho real
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        // Execute qualquer ação desejada no cancelamento
+        console.log('Cancel button clicked');
       }
-    }
-    )
+    })
   }
 
-  return (
-    <div className=''>
+  useEffect(() => {
+// Defina um cronômetro para mostrar o alerta após 10 segundos
+    const timer = setTimeout(showAlert, 15000);
 
-      <button onClick={alert} >Agende sua consulta</button>
+    //Limpa o timer se o componente for desmontado
+    return () => clearTimeout(timer);
+  }, []);
 
-     ,
-
-     
-        
-    
-    </div>
-  );
-}
+};
 
 export default Sweet;
