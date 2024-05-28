@@ -19,6 +19,7 @@
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .1s ease;
   width: 20%;
+  margin-top: 3px;
   
 }
 
