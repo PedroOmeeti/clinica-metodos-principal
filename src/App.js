@@ -7,14 +7,14 @@ import Clinica from "./components/pages/Clinica.js";
 import Contato from "./components/pages/Contato.js";
 import Agende from "./components/pages/Agende.js";
 import Adm from "./components/pages/pagesADM/Adm.js";
-import MenuFooter from "./components/MenuFooter.js"
-
+import MenuFooter from "./components/MenuFooter.js";
+import Sweet from "./components/SweetAlert.js";
 
 function App() {
   return (
     <Container fluid className="p-0 overflow-hidden">
       <BrowserRouter>
-        
+
         <Row>
           <NavA />
         </Row>
@@ -25,18 +25,21 @@ function App() {
             <Route path="/contato" element={<Contato />} />
             <Route path="/agende" element={<Agende />} />
             <Route path="/adm" element={<Adm />} />
-            
+
           </Routes>
         </Row>
 
         <Row>
           <MenuFooter />
-        </Row>    
+        </Row>
 
+        <Row>
+          <Sweet />
+        </Row>
         <Row>
           <Col className="text-center Footer-color p-2">
             <span className="fs-5">&copy;2024 Copyright - GUPE Desenvolvimento</span>
-          </Col>   
+          </Col>
         </Row>
       </BrowserRouter>
     </Container>

@@ -15,8 +15,15 @@ import { RiPsychotherapyLine } from "react-icons/ri";
 import { IoNutritionOutline } from "react-icons/io5";
 import { MdHearing } from "react-icons/md";
 import { MdPsychology } from "react-icons/md";
+
 import { MdOutlinePsychology } from "react-icons/md";
 import { FaHandsHoldingChild } from "react-icons/fa6";
+
+import Ambiente1 from '../img/ambiente1.png'
+import Ambiente2 from '../img/ambiente2.png'
+
+
+
 
 function Clinica() {
   return (
@@ -42,6 +49,9 @@ function Clinica() {
           <Col>
           <img src={Infraestrutura} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
+        </Row>
+        <Row>
+          <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
         </Row>
       </Container>
 
@@ -95,10 +105,26 @@ function Clinica() {
           </Col>
           <Col></Col>
         </Row>
+      </Container>
+      
+      <Container>
+
         <Row>
-          <Col className="fs-4 text-center mb-4"> A Clínica Renovar Saúde trás para sua empresa as soluções para a gestão e envio dos eventos de saúde. Além disso, a clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os serviços da Clínica Renovar Saúde.</Col>
+          <Col className="fs-4 text-center mb-4">
+            A cada dia, a Métodos Clínica continua a escrever sua história de sucesso, tocando vidas e proporcionando esperança a todos que passam por suas portas. É um lugar onde o cuidado vai além da medicina, onde a cura começa no momento em que se é recebido com um sorriso caloroso e um abraço sincero.
+          </Col>
         </Row>
-        
+
+        <Row>
+          <Col>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2" src={Ambiente1}></img>
+          </Col>
+
+          <Col>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Ambiente2}></img>
+          </Col>
+        </Row>
+
       </Container>
       
     </div>
