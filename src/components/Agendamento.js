@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
-import ImagemGrande from './img/imagemGrande.jpg'
+import ImagemGrande from './img/imagemGrande.png'
+import "./Agendamento.components.css"
 
 const Agendamento = () => {
   const [data, setData] = useState('');
@@ -24,7 +25,7 @@ const Agendamento = () => {
       <Form onSubmit={handleSubmit} className='mb-5 '>
         <Row className='align-items-center justify-content-center'>
           <Col md="5" xs="12">
-            <img className='rounded-5 img-fluid d-block mx-auto mb-4'  src={ImagemGrande} />
+            <img id='imagem' className='rounded-5 d-block mx-auto mb-4'  src={ImagemGrande} />
           </Col>
           
           <Col>
