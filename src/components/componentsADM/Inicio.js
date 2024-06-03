@@ -6,10 +6,12 @@ import {
   Button
 } from "reactstrap";
 import AgendaHorarios from "./AgendaHorarios";
+import Calendario from "../componentsADM/Calendario";
 
 // import Emojisorrindo from '../img/emojisorrindo.png'
 import '../Clinica.components.css'
 import '../Contato.components.css'
+import './Adm.components.css'
 
 function Inicio() {
   return(
@@ -51,7 +53,7 @@ function Inicio() {
             </Col>
             <Col>
                 <Container className="bg-white p-0 m-0">
-                    <AgendaHorarios />
+                    <Calendario />
                 </Container>
             </Col>
         </Row>
