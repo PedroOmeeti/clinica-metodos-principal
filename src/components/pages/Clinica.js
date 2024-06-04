@@ -5,7 +5,7 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
-import Infraestrutura from '../img/estrutura-clinica.jpg'
+import Infraestrutura from '../img/infraestrutura.png'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 import '../Clinica.components.css'
 import { Link } from "react-router-dom";
