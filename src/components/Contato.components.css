@@ -39,3 +39,16 @@
 .bg-tertiary{
   background-color: var(--tertiary) !important;
 }
+#rede1:hover{
+  color: #FF1B52;
+}
+#rede1{
+  color: #6d0100;
+  padding-right: 30px;
+}
+#rede2:hover{
+  color: #1877F2;
+}
+#rede2{
+  color: #6d0100;
+}

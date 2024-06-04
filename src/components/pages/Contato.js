@@ -58,8 +58,8 @@ function Contato() {
             <p><FaEnvelope className="p-0 text-secondary"/> metodosclinicarecepcao@outlook.com</p>
             <hr />
             <p className="h4">Nos siga nas redes sociais</p>
-            <a className="fs-1" href="https://www.instagram.com/metodosclinica/" target="_blank"><FaInstagram className="p-0 text-secondary" /></a>
-            <a className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare className="p-0 ms-2 text-secondary" /></a>
+            <a id="rede1" className="fs-1" href="https://www.instagram.com/metodosclinica/" target="_blank"><FaInstagram /></a>
+            <a id="rede2" className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare /></a> 
           </Col>
         </Row>
       </Container>
