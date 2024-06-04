@@ -15,7 +15,7 @@ function Contato() {
           </Col>
         </Row>
         <Row className="mb-5">
-          <Col xs="12" md="6">
+          <Col className="border p-3" xs="12" md="6">
             <ItemForm
               label="Nome"
               name="nome"
