@@ -2,6 +2,7 @@ import { Button, Col, Container, Row } from "reactstrap";
 import ItemForm from "../ItemForm";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaInstagram, FaFacebookSquare, FaHandHoldingMedical, FaMapMarkerAlt } from "react-icons/fa";
 import "../Contato.components.css";
+import { IoChatbubbles } from "react-icons/io5";
 
 function Contato() {
   return (
@@ -49,17 +50,20 @@ function Contato() {
             <p>
               <p className="h5">Telefone</p>
             </p>
-            <p><FaPhoneAlt className="p-0 text-secondary"/> (12) 3643-7796</p>
+            <p><FaPhoneAlt className="p-0 text-secondary" /> (12) 3643-7796</p>
             <hr />
             <p className="h5">Whatsapp</p>
-            <p><FaWhatsapp className="p-0 text-secondary"/> (12) 99644-8045</p>
+
+            <a className="zap" href="https://api.whatsapp.com/send/?phone=5512996448045&text&type=phone_number&app_absent=0s" about="blanck__">
+              <p><FaWhatsapp className="p-0 text-secondary" /> (12) 99644-8045 <IoChatbubbles /></p></a>
             <hr />
+
             <p className="h5">E-mail</p>
-            <p><FaEnvelope className="p-0 text-secondary"/> metodosclinicarecepcao@outlook.com</p>
+            <p><FaEnvelope className="p-0 text-secondary" /> metodosclinicarecepcao@outlook.com</p>
             <hr />
             <p className="h4">Nos siga nas redes sociais</p>
             <a id="rede1" className="fs-1" href="https://www.instagram.com/metodosclinica/" target="_blank"><FaInstagram /></a>
-            <a id="rede2" className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare /></a> 
+            <a id="rede2" className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare /></a>
           </Col>
         </Row>
       </Container>
@@ -67,32 +71,32 @@ function Contato() {
         <Container>
           <Row>
             <Col xs='12' sm='6' className="mt-5 p-5">
-                <p className="text-center fs-1"><FaHandHoldingMedical /></p>
-                <hr/>              
-                {/* <p className="h5">Clinica Renovar Saude Centro</p>
+              <p className="text-center fs-1"><FaHandHoldingMedical /></p>
+              <hr />
+              {/* <p className="h5">Clinica Renovar Saude Centro</p>
                 <p><FaMapMarkerAlt /> R. Estela, 116 - Centro, pindamonhangaba - SP, 12404-200</p>
                 <p><FaPhoneAlt /> (12) 8547-3322</p>
                 <hr/> */}
-                <p className="h5">Clinica Renovar Saude Crispim</p>
-                <p><FaMapMarkerAlt /> R. Manoel Cembraneli, 225 - Chácara Galega, Pindamonhangaba - SP, 12422-200</p>
-                <p><FaPhoneAlt /> (12) 3643-7796</p>
-                <hr/>
-                {/* <p className="h5">Clinica Renovar Saude Taubaté</p>
+              <p className="h5">Clinica Renovar Saude Crispim</p>
+              <p><FaMapMarkerAlt /> R. Manoel Cembraneli, 225 - Chácara Galega, Pindamonhangaba - SP, 12422-200</p>
+              <p><FaPhoneAlt /> (12) 3643-7796</p>
+              <hr />
+              {/* <p className="h5">Clinica Renovar Saude Taubaté</p>
                 <p><FaMapMarkerAlt /> Av. dos Autonomistas, 896, Centro, Taubaté - SP, 12404-372</p>
                 <p><FaPhoneAlt /> (12) 4002-8922</p> */}
             </Col>
             <Col className="d-flex align-self-center mt-5 mb-5" xs='12' sm='6'>
               <div className="mapouter">
-                  <div className="gmap_canvas">
-                    
-                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rua%20Manoel%20Cembranelli,%20225,%20Ch%C3%A1cara%20Galega,%20Pindamonhangaba,%20SP,%20Brazil+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    
-                  </div>
+                <div className="gmap_canvas">
+
+                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rua%20Manoel%20Cembranelli,%20225,%20Ch%C3%A1cara%20Galega,%20Pindamonhangaba,%20SP,%20Brazil+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
                 </div>
-              </Col>
+              </div>
+            </Col>
           </Row>
-          </Container>
         </Container>
+      </Container>
     </div>
   );
 }
