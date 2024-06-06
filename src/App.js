@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "reactstrap";
@@ -14,19 +15,12 @@ function App() {
   return (
     <Container fluid className="p-0 overflow-hidden">
       <BrowserRouter>
-
         <Row>
           <NavA />
         </Row>
 
         <Row>
-          <Routes>
-            <Route path="/" element={<Clinica />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/agende" element={<Agende />} />
-            <Route path="/adm" element={<Adm />} />
-
-          </Routes>
+          <AnimatedRoutes />
         </Row>
 
         <Row>
@@ -43,6 +37,27 @@ function App() {
         </Row>
       </BrowserRouter>
     </Container>
+  );
+}
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <TransitionGroup>
+      <CSSTransition
+        key={location.key}
+        classNames="fade"
+        timeout={800}
+      >
+        <Routes location={location}>
+          <Route path="/" element={<Clinica />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/agende" element={<Agende />} />
+          <Route path="/adm" element={<Adm />} />
+        </Routes>
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
 
