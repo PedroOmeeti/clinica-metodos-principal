@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
-import Carrosel1 from './img/banner-slider-002-3.jpg'
+import Carrosel1 from './img/Nova imagem.jpg'
 
 const items = [
   {
