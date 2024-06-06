@@ -48,7 +48,7 @@ function AnimatedRoutes() {
       <CSSTransition
         key={location.key}
         classNames="fade"
-        timeout={800}
+        timeout={600}
       >
         <Routes location={location}>
           <Route path="/" element={<Clinica />} />
