@@ -12,9 +12,13 @@ import MenuFooter from "./components/MenuFooter.js";
 import Sweet from "./components/SweetAlert.js";
 
 function App() {
+ 
+
+  
   return (
     <Container fluid className="p-0 overflow-hidden">
       <BrowserRouter>
+      
         <Row>
           <NavA />
         </Row>
@@ -27,7 +31,6 @@ function App() {
         <Row>
           <MenuFooter />
         </Row>
-
 
 
         <Row>
@@ -51,6 +54,9 @@ function AnimatedRoutes() {
         timeout={600}
       >
         <Routes location={location}>
+        {
+        console.log(useLocation().pathname)
+        }
           <Route path="/" element={<Clinica />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/agende" element={<Agende />} />
