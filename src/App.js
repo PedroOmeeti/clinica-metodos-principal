@@ -33,6 +33,7 @@ function App() {
         </Row>
 
 
+
         <Row>
           <Col className="text-center Footer-color p-2">
             <span className="fs-5">&copy;2024 Copyright - GUPE Desenvolvimento</span>
