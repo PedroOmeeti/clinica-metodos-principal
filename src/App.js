@@ -26,10 +26,12 @@ function App() {
         <Row>
           <AnimatedRoutes />
         </Row>
-
+        
+        <Sweet />
         <Row>
           <MenuFooter />
         </Row>
+
 
 
         <Row>
