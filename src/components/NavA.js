@@ -24,13 +24,13 @@ function NavA() {
 
         <Nav id='barra' className="me-auto d-md-row justify-content-around'" navbar>
           <NavItem>
-            <Link id='roter' className='nav-link cor-texto' to="/">Clínica</Link>
+            <Link className='roter nav-link cor-texto' to="/">Clínica</Link>
           </NavItem>
           <NavItem>
-            <Link id='roter' className='nav-link cor-texto' to="/Contato">Contato</Link>
+            <Link className='roter nav-link cor-texto' to="/Contato">Contato</Link>
           </NavItem>
           <NavItem>
-            <Link id='roter' className='nav-link cor-texto' to="/Agende">Agende</Link>
+            <Link className='roter nav-link cor-texto' to="/Agende">Agende</Link>
           </NavItem>
           <NavItem>
             <ModalLogin />
