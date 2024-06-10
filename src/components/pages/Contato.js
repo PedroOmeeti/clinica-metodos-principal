@@ -54,7 +54,7 @@ function Contato() {
             <hr />
             <p className="h5">Whatsapp</p>
 
-            <a className="zap" href="https://api.whatsapp.com/send/?phone=5512996448045&text&type=phone_number&app_absent=0s" about="blanck__">
+            <a className="zap" href="https://api.whatsapp.com/send/?phone=5512996448045&text&type=phone_number&app_absent=0s" target="_blank">
               <p><FaWhatsapp className="p-0 text-secondary" /> (12) 99644-8045 <IoChatbubbles /></p></a>
             <hr />
 

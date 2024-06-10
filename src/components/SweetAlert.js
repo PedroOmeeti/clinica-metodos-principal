@@ -62,7 +62,7 @@ function Sweet() {
   }, []);
 
   return (
-    <div>
+    <div className='d-none'>
       <Navbar>
         <Nav>
           <NavItem>
