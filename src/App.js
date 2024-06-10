@@ -12,9 +12,13 @@ import MenuFooter from "./components/MenuFooter.js";
 import Sweet from "./components/SweetAlert.js";
 
 function App() {
+ 
+
+  
   return (
     <Container fluid className="p-0 overflow-hidden">
       <BrowserRouter>
+      
         <Row>
           <NavA />
         </Row>
@@ -27,9 +31,7 @@ function App() {
           <MenuFooter />
         </Row>
 
-        <Row>
-          <Sweet />
-        </Row>
+
         <Row>
           <Col className="text-center Footer-color p-2">
             <span className="fs-5">&copy;2024 Copyright - GUPE Desenvolvimento</span>
@@ -51,6 +53,9 @@ function AnimatedRoutes() {
         timeout={600}
       >
         <Routes location={location}>
+        {
+        console.log(useLocation().pathname)
+        }
           <Route path="/" element={<Clinica />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/agende" element={<Agende />} />
