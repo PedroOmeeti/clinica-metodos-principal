@@ -5,19 +5,23 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
-import Infraestrutura from '../img/estrutura-clinica.jpg'
+import Infraestrutura from '../img/infraestrutura.png'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 import '../Clinica.components.css'
 import { Link } from "react-router-dom";
 import '../Contato.components.css'
 import { RiPsychotherapyLine } from "react-icons/ri";
 // import { FaHandHoldingMedical } from "react-icons/fa6";
-import { GiMedicines } from "react-icons/gi";
 import { IoNutritionOutline } from "react-icons/io5";
 import { MdHearing } from "react-icons/md";
 import { MdPsychology } from "react-icons/md";
+
+import { MdOutlinePsychology } from "react-icons/md";
+import { FaHandsHoldingChild } from "react-icons/fa6";
+
 import Ambiente1 from '../img/ambiente1.png'
 import Ambiente2 from '../img/ambiente2.png'
+
 
 
 
@@ -65,7 +69,10 @@ function Clinica() {
               <MdHearing className="fs-1" />
             </Col>
             <Col className="text-center fs-4">
-              <MdPsychology className="fs-1" />
+              <MdOutlinePsychology className="fs-1" />
+            </Col>
+            <Col className="text-center fs-4">
+              <FaHandsHoldingChild className="fs-1" />
             </Col>
           </Row>
           <Row>
@@ -80,6 +87,9 @@ function Clinica() {
             </Col>
             <Col className="text-center fs-4">
               Psiquiatria   
+            </Col>
+            <Col className="text-center fs-4">
+              Psicopedagogia   
             </Col>
             
           </Row>

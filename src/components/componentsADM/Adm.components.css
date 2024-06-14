@@ -1,3 +1,7 @@
 .listBackGround {
   background: #982819;
 }
+
+.fc-scrollgrid-sync-inner a{
+  color: black !important;
+}

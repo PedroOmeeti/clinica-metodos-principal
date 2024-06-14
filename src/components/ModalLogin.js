@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody, ModalFooter, Row, Col } from 'reactstrap';
-import { FaRegUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import ItemForm from './ItemForm';
 import { FaUserAlt } from "react-icons/fa";
 
@@ -16,7 +16,7 @@ function ModalLogin(args) {
   return (
     <div>
       <a id='icone' className='nav-link text-white' color="danger" onClick={toggle}>
-        <bold ><FaRegUser color='#800100' /></bold>
+        <bold ><FaUser color='#800100' /></bold>
       </a>
       <Modal isOpen={modal} toggle={toggle} {...args}>
         <ModalHeader toggle={toggle} className='text-center'><FaUserAlt /> Login</ModalHeader>

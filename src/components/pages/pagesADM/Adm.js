@@ -23,7 +23,7 @@ function Adm() {
 
 
   return(
-    <Container>
+    <Container fluid>
       <Row>
         <Col className="col-1 listBackGround text-white">
           <button className="aperta nav-link py-1 ms-2" onClick={() =>ResultadoNavegacao('Horarios')}>Horarios</button>

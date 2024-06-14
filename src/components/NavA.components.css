@@ -15,14 +15,15 @@
   transform: scale(1.1);
 }
 
-#roter  {
+.roter  {
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .1s ease;
   width: 20%;
+  margin-top: 3px;
   
 }
 
-#roter:hover{
+.roter:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   color: rgb(196, 8, 8);
@@ -44,4 +45,3 @@
 
 }
 
-#menu:hover {}
