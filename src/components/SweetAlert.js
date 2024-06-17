@@ -13,7 +13,7 @@ function Sweet() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-    if (!alertShownRef.current) {
+    if (!alertShownRef.current && window.location.pathname != "/Adm") {
       timeoutRef.current = setTimeout(showAlert, 15000);
     }
   };
@@ -62,7 +62,7 @@ function Sweet() {
   }, []);
 
   return (
-    <div>
+    <div className='d-none'>
       <Navbar>
         <Nav>
           <NavItem>

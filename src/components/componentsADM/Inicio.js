@@ -15,7 +15,7 @@ import './Adm.components.css'
 
 function Inicio() {
   return(
-    <div className="container-fluid p-0 fundoAgenda">
+    <Container fluid className="p-0 fundoAgenda">
         <Row>
             <Col xs='3' className="h5 text-center m-2"><p>Agenda - Dr. Estevão Rada</p></Col>
             <Col><button className="primary m-2 btn text-white text-center"><b>Adicionar em Lista de Espera</b></button></Col>
@@ -52,12 +52,12 @@ function Inicio() {
                 </Container>
             </Col>
             <Col>
-                <Container className="bg-white p-0 m-0">
+                <Container className="bg-white p-0 mb-4">
                     <Calendario />
                 </Container>
             </Col>
         </Row>
-    </div>
+    </Container>
   )
 }
 
