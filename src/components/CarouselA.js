@@ -7,13 +7,36 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import Carrosel1 from './img/Nova imagem.jpg'
+import Carrosel2 from './img/pscicologo.jpg'
+import Carrosel3 from './img/psicologia infantil.jpg'
+import Carrosel4 from './img/nutrição.png.jpg'
+
 
 const items = [
   {
     src: [Carrosel1],
     key: 1,
   },
+  {
+    src: [Carrosel2],
+    key: 2,
+  },
+  {
+    src: [Carrosel3],
+    key: 3,
+  },
+  
+  {
+    src: [Carrosel4],
+    key: 4,
+  }
+  
+
+
 ];
+
+
+
 
 function CarouselA() {
   const [activeIndex, setActiveIndex] = useState(0);
