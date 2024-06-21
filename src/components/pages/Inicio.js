@@ -25,7 +25,7 @@ import Ambiente2 from '../img/ambiente2.png'
 
 
 
-function Clinica() {
+function Inicio() {
   return (
     <div>
       <Row>
@@ -131,4 +131,4 @@ function Clinica() {
   );
 }
 
-export default Clinica;
+export default Inicio;
