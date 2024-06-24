@@ -5,7 +5,7 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
-import Infraestrutura from '../img/infraestrutura.png'
+import Janaina from '../img/janaina.jpg'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 import '../Clinica.components.css'
 import { Link } from "react-router-dom";
@@ -19,7 +19,7 @@ import { MdPsychology } from "react-icons/md";
 import { MdOutlinePsychology } from "react-icons/md";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 
-import Ambiente1 from '../img/ambiente1.png'
+import Sala from '../img/sala_jana.jpg'
 import Ambiente2 from '../img/ambiente2.png'
 
 
@@ -47,7 +47,7 @@ function Clinica() {
         </Row>
         <Row>
           <Col>
-          <img src={Infraestrutura} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
+          <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
         </Row>
         <Row>
@@ -75,6 +75,7 @@ function Clinica() {
               <FaHandsHoldingChild className="fs-1" />
             </Col>
           </Row>
+          {/* oii */}
           <Row>
             <Col className="text-center fs-4">
               Psicologia  
@@ -117,11 +118,11 @@ function Clinica() {
 
         <Row>
           <Col>
-            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2" src={Ambiente1}></img>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
 
           <Col>
-            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Ambiente2}></img>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
         </Row>
 
