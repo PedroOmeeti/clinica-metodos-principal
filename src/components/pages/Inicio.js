@@ -8,8 +8,6 @@ import CarouselA from "../CarouselA";
 import Janaina from '../img/janaina.jpg'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 
-import Infraestrutura from '../img/infraestrutura.png'
-
 import '../Clinica.components.css'
 import { Link } from "react-router-dom";
 import '../Contato.components.css'
@@ -28,9 +26,7 @@ import { GiLovers } from "react-icons/gi";
 import { ImHome } from "react-icons/im";
 import { SlBriefcase } from "react-icons/sl";
 import { TbPhysotherapist } from "react-icons/tb";
-import Ambiente1 from '../img/ambiente1.png'
 
-import Ambiente2 from '../img/ambiente2.png'
 
 
 
@@ -58,11 +54,9 @@ function Inicio() {
         <Row>
           <Col>
           <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
-            <img src={Infraestrutura} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
-
           </Col>
         </Row>
-        <Row>
+        <Row >
           <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
         </Row>
       </Container>
