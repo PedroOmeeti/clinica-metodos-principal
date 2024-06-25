@@ -52,7 +52,7 @@ function Inicio() {
                 </Container>
             </Col>
             <Col>
-                <Container className="bg-white p-0 m-0">
+                <Container className="bg-white p-0 mb-4">
                     <Calendario />
                 </Container>
             </Col>
