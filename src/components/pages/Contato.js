@@ -54,7 +54,8 @@ function Contato() {
             <hr />
             <p className="h5">Whatsapp</p>
 
-            <a className="zap" href="https://api.whatsapp.com/send/?phone=5512996448045&text&type=phone_number&app_absent=0s" target="_blank" >
+            <a className="zap" href="https://api.whatsapp.com/send?phone=5512996448045&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20cl%C3%ADnica.
+" target="_blank" >
               <p><FaWhatsapp className="p-0 text-secondary" /> (12) 99644-8045 <IoChatbubbles /></p></a>
             <hr />
 
@@ -77,7 +78,7 @@ function Contato() {
                 <p><FaMapMarkerAlt /> R. Estela, 116 - Centro, pindamonhangaba - SP, 12404-200</p>
                 <p><FaPhoneAlt /> (12) 8547-3322</p>
                 <hr/> */}
-              <p className="h5">Clinica Renovar Saude Crispim</p>
+              <p className="h5">Métodos Clinica | Pindamonhangaba</p>
               <p><FaMapMarkerAlt /> R. Manoel Cembraneli, 225 - Chácara Galega, Pindamonhangaba - SP, 12422-200</p>
               <p><FaPhoneAlt /> (12) 3643-7796</p>
               <hr />
