@@ -27,7 +27,10 @@ function NavA() {
             <Link id='roter' className='nav-link cor-texto' to="/">Início</Link>
           </NavItem>
           <NavItem>
-            <Link id='roter' className='nav-link cor-texto' to="/Sobre">Sobree</Link>
+            <Link id='roter' className='nav-link cor-texto' to="/Plano">Plano</Link>
+          </NavItem>
+          <NavItem>
+            <Link id='roter' className='nav-link cor-texto' to="/Sobre">Sobre</Link>
           </NavItem>
           <NavItem>
             <Link id='roter' className='nav-link cor-texto' to="/Contato">Contato</Link>

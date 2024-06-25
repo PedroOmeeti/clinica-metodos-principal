@@ -11,6 +11,7 @@ import Adm from "./components/pages/pagesADM/Adm.js";
 import MenuFooter from "./components/MenuFooter.js";
 import Sweet from "./components/SweetAlert.js";
 import Sobre from "./components/pages/Sobre.js";
+import Plano from "./components/pages/Plano.js";
 
 function App() {
  
@@ -61,6 +62,7 @@ function AnimatedRoutes() {
         }
           <Route path="/" element={<Inicio />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/plano" element={<Plano />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/agende" element={<Agende />} />
           <Route path="/adm" element={<Adm />} />
