@@ -101,7 +101,7 @@ function Plano() {
 
                 <CardText className="text-center d-flex justify-content-center">
 
-                  <p>R$</p> <h2 className="text-success">100</h2>
+                  <p>R$</p> <h2 className="text-success">150</h2>
 
                 </CardText>
               </CardHeader>
