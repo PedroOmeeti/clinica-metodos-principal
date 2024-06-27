@@ -1,15 +1,70 @@
-.card{
+.card {
     background-color: white;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  background: #FFFFFF;
-  border-bottom: 1px solid #ffffff;
-  box-shadow: 0px 0px 8px 2px #c9c9c9;
-  margin-bottom: 2px;
-};
-.lista{
-    font-size: 3px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 12px 12px 33px #c7c7c7,
+        -12px -12px 33px #f9f9f9;
+
 }
-.corpo{
+
+.img{
+    border-radius: 12px;
+    width: 70%;
+    
+}
+.icone{
+    font-size: 100px;
+    color: #0a0a0a;
+}
+.custom-hr {
+    border: 0; /* Remove a borda padrão */
+    height: 2px; /* Altura da linha */
+    background-color: #000000; /* Cor da linha (vermelho brodô) */
+    margin: 40px 0; /* Espaçamento acima e abaixo da linha */
+    width: 100%; /* Largura da linha (ajuste conforme necessário) */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.5); /* Sombra (opcional) */
+  }
+  
+
+.cabecalho{
+    margin-bottom: 150px;
+}
+.textoimg{
+    margin-left: 70px;
+}
+
+.especialidades{
+    margin-left: 70px !important;
+}
+
+.texto {
+    font-size: 50px !important   ;
+  }
+
+
+.lista {
+    font-size: 20px !important;
+}
+
+.bordo {
+    color: #ca0a0a; /* código de cor para vermelho brodô */
+  }
+  
+
+.esp{
+    margin-bottom: 15px;
+}
+
+.corpo {
     margin-bottom: 200px;
+    margin-top: 120px;
+}
+
+.header {
+    border-bottom: white;
 }
