@@ -1,14 +1,56 @@
 import { Col, Container, Row } from "reactstrap"
+import SobreNos from "../SobreNos";
+import CardNos from "../CardNos";
 
 function Sobre() {
-  return(
+  return (
     <Container>
       <Row>
-        
-      </Row>
-      <Row>
         <Col>
-          <p className="fs-4">O trabalho em equipe na clínica de psicologia é fundamental para garantir um atendimento completo e de qualidade, desde a recepção calorosa até o acompanhamento psicológico especializado. Cada profissional contribui com suas habilidades e conhecimentos específicos, criando um ambiente acolhedor e propício para o cuidado da saúde mental.</p>
+          <SobreNos />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="text-center">
+          <h1 className="mt-5">Profissionais</h1>
+          <hr />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
+        </Col>
+
+        <Col className="col-3">
+          <CardNos />
         </Col>
       </Row>
     </Container>
