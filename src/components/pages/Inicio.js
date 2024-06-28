@@ -5,7 +5,9 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
-import Infraestrutura from '../img/infraestrutura.png'
+import Janaina from '../img/janaina.jpg'
+// import Emojisorrindo from '../img/emojisorrindo.png'
+
 import '../Clinica.components.css'
 import { Link } from "react-router-dom";
 import '../Contato.components.css'
@@ -14,14 +16,17 @@ import { IoNutritionOutline } from "react-icons/io5";
 import { MdHearing } from "react-icons/md";
 import { MdOutlinePsychology } from "react-icons/md";
 import { FaHandsHoldingChild } from "react-icons/fa6";
+
+
+import Sala from '../img/sala_jana.jpg'
+
 import { LuStethoscope } from "react-icons/lu";
 import { MdElderlyWoman } from "react-icons/md";
 import { GiLovers } from "react-icons/gi";
 import { ImHome } from "react-icons/im";
 import { SlBriefcase } from "react-icons/sl";
 import { TbPhysotherapist } from "react-icons/tb";
-import Ambiente1 from '../img/ambiente1.png'
-import Ambiente2 from '../img/ambiente2.png'
+
 
 
 
@@ -48,10 +53,10 @@ function Inicio() {
         </Row>
         <Row>
           <Col>
-            <img src={Infraestrutura} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
+          <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
         </Row>
-        <Row>
+        <Row >
           <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
         </Row>
       </Container>
@@ -77,6 +82,7 @@ function Inicio() {
               <FaHandsHoldingChild className="fs-1" />
             </Col>
           </Row>
+          {/* oii */}
           <Row className="mb-5">
             <Col className="text-center fs-4">
               Psicologia
@@ -156,11 +162,11 @@ function Inicio() {
 
         <Row>
           <Col>
-            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2" src={Ambiente1}></img>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
 
           <Col>
-            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Ambiente2}></img>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
         </Row>
 

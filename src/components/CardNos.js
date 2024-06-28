@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container, Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import Clinica from './img/imagemGrande.png'
+import "./CardNos.components.css";
 
 
 const CardNos = ({ img, especialista, especialidade }) => {
@@ -7,7 +9,7 @@ const CardNos = ({ img, especialista, especialidade }) => {
     return (
         <Container fluid>
             <Card
-                className="border-0 mt-3"
+                className="border-0 mt-3 borda mb-4 cor card"
                 outline
                 style={{
                     width: '16rem'
@@ -26,7 +28,7 @@ const CardNos = ({ img, especialista, especialidade }) => {
                         {especialista}
                     </CardTitle>
                     <CardSubtitle
-                        className="mb-2 text-muted text-center"
+                        className="mb-2  text-center"
                         tag="h6"
                     >
                         {especialidade}

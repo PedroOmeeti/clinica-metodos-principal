@@ -12,14 +12,14 @@ const SobreNos = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className='align-items-center'>
                 <Col className="col-6">
-                    <img className='borda d-block  mb-4 w-100' src={Clinica} />
+                    <img className='borda d-block  mb-4 w-100 img' src={Clinica} />
                 </Col>
 
                 <Col className="col-6">
-                    <h3 className="mb-2 ti">Sobre Nós</h3>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Donec volutpat, nisi ut auctor venenatis, velit nisl sollicitudin metus, ut aliquam libero orci eget nunc.</h5>
+                    <h3 className="mb-2 ti">Sobre Nós:</h3>
+                    <h5 className='fs-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Donec volutpat, nisi ut auctor venenatis, velit nisl sollicitudin metus, ut aliquam libero orci eget nunc.</h5>
                 </Col>
             </Row>
 
