@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "reactstrap";
 import SobreNos from "../SobreNos";
-import CardNos from '../CardNos';
+import CardNos from "../CardNos";
+import Clinica from '../img/imagemGrande.png'
 import Janater from '../img/janater.png'
 import Funcionarios from '../img/funcionarios.png'
 import Sala from '../img/sala_jana 1.jpg';
@@ -31,37 +32,37 @@ function Sobre() {
         <h1 className="mb-2 ti">Profissionais:</h1>
         <h5 className="fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</h5>
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista"/>
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
       </Row>
 
       <Row>
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
         <hr />
       </Row>

@@ -3,7 +3,8 @@ import { Button, Form, FormGroup, Label, Input, Row, Col, Container, Card, CardB
 import Clinica from './img/imagemGrande.png'
 import "./CardNos.components.css";
 
-const CardNos = () => {
+
+const CardNos = ({ img, especialista, especialidade }) => {
 
     return (
         <Container fluid>
@@ -18,19 +19,19 @@ const CardNos = () => {
                 <img
                     className='d-block borda'
                     alt="Profissional"
-                    src= {Clinica}
+                    src= {img}
                 />
                 <CardBody >
                     <CardTitle 
                     className='text-center'
                     tag="h3">
-                        Gabriela
+                        {especialista}
                     </CardTitle>
                     <CardSubtitle
                         className="mb-2  text-center"
                         tag="h6"
                     >
-                        Nutricionista
+                        {especialidade}
                     </CardSubtitle>
                 </CardBody>
             </Card>
