@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container, Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
-import Clinica from './img/imagemGrande.png'
 
-const CardNos = () => {
+
+const CardNos = ({ img, especialista, especialidade }) => {
 
     return (
         <Container fluid>
@@ -17,19 +17,19 @@ const CardNos = () => {
                 <img
                     className='d-block borda'
                     alt="Profissional"
-                    src= {Clinica}
+                    src= {img}
                 />
                 <CardBody >
                     <CardTitle 
                     className='text-center'
                     tag="h3">
-                        Gabriela
+                        {especialista}
                     </CardTitle>
                     <CardSubtitle
                         className="mb-2 text-muted text-center"
                         tag="h6"
                     >
-                        Nutricionista
+                        {especialidade}
                     </CardSubtitle>
                 </CardBody>
             </Card>

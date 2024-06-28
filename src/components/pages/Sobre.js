@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "reactstrap"
 import SobreNos from "../SobreNos";
 import CardNos from "../CardNos";
+import Clinica from '../img/imagemGrande.png'
 
 function Sobre() {
   return (
@@ -20,37 +21,37 @@ function Sobre() {
 
       <Row>
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista"/>
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
       </Row>
 
       <Row>
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
 
         <Col className="col-3">
-          <CardNos />
+          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
         </Col>
       </Row>
     </Container>
