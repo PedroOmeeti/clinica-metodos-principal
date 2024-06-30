@@ -4,16 +4,57 @@
   /* font-size: 10px; */
 }
 
-#logo{
+/* NavA.components.css */
+
+#logo {
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
-  width: 15%;
+  width: 60%; /* Tamanho padrão */
 }
 
-#logo:hover{
+#logo:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* Ajustar tamanho da logo para diferentes tamanhos de tela */
+@media (min-width: 576px) { /* Telas pequenas */
+  #logo {
+    width: 40%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 849px) { /* Telas médias */
+  #logo {
+    width: 9999999999999999%;
+  }
+}
+@media (min-width: 850px) and (max-width: 991px) { /* Telas médias */
+  #logo {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) { /* Telas grandes */
+  #logo {
+    width: 65%;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) { /* Telas extra grandes */
+  #logo {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) { /* Telas extra grandes */
+  #logo {
+    width: 50%;
+  }
+}
+
 
 .roter  {
   -webkit-transition: -webkit-transform .5s ease;
