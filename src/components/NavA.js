@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React, { useState } from 'react';
 import {
   Navbar,
@@ -7,46 +7,52 @@ import {
   Col,
   NavbarToggler,
   Collapse,
+  Row,
 } from 'reactstrap';
-import { FaRegUser } from "react-icons/fa";
 import './NavA.components.css';
 import ModalLogin from './ModalLogin';
-import { MdHealthAndSafety } from "react-icons/md";
 import Logo from './img/Logo.png';
 
 function NavA() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+
   return (
     <div className=''>
       <Navbar id='menu' expand="md" className='p-5 bg-light'>
         <Col className='ms-md-5'>
-          <Link className='navbar-brand cor-texto' to="/"><img className='img-fluid' id='logo' src={Logo} alt='Logo' /></Link>
+          <NavLink className='navbar-brand cor-texto' to="/"><img className='img-fluid' id='logo' src={Logo} alt='Logo' /></NavLink>
         </Col>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className="text-center mt-md-0 mt-5">
-          <Nav id='barra' className=" d-flex ms-auto justify-content-md-end justify-content-center align-items-center" navbar>
+          <Nav id='barra' className="d-flex ms-auto justify-content-md-end justify-content-center align-items-center" navbar>
             <NavItem>
-              <Link id='roter' className='nav-link cor-texto' to="/">Início</Link>
+              <NavLink id='roter' className='nav-link cor-texto' to="/" activeClassName="active">Início</NavLink>
             </NavItem>
             <NavItem>
-              <Link id='roter' className='nav-link cor-texto' to="/Plano">Plano</Link>
+              <NavLink id='roter' className='nav-link cor-texto' to="/Plano" activeClassName="active">Plano</NavLink>
             </NavItem>
             <NavItem>
-              <Link id='roter' className='nav-link cor-texto' to="/Sobre">Sobre</Link>
+              <NavLink id='roter' className='nav-link cor-texto' to="/Sobre" activeClassName="active">Sobre</NavLink>
             </NavItem>
             <NavItem>
-              <Link id='roter' className='nav-link cor-texto' to="/Contato">Contato</Link>
+              <NavLink id='roter' className='nav-link cor-texto' to="/Contato" activeClassName="active">Contato</NavLink>
             </NavItem>
             <NavItem>
-              <Link id='roter' className='nav-link cor-texto' to="/Agende">Agende</Link>
+              <NavLink id='roter' className='nav-link cor-texto' to="/Agende" activeClassName="active">Agende</NavLink>
             </NavItem>
             <NavItem className='d-flex justify-content-center'>
+            {isOpen && (
+                <span className="d-md-none d-inline cor-texto d-flex align-items-center p-2">Login
+                </span>
+              )}
               <ModalLogin />
             </NavItem>
+
           </Nav>
         </Collapse>
+
       </Navbar>
     </div>
   );
