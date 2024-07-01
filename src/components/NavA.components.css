@@ -1,7 +1,23 @@
 .cor-texto {
-  color: #800100;
+  color: #5a5a5a;
   font-weight: bold;
   /* font-size: 10px; */
+}
+
+.nav-link.active {
+  color: rgb(163, 0, 0) !important;
+  position: relative;
+  text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px; /* Ajuste conforme necessário */
+  width: 100%;
+  height: 2px; /* Espessura do sublinhado */
+  background-color: rgb(163, 0, 0);
 }
 
 /* NavA.components.css */
@@ -9,7 +25,8 @@
 #logo {
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
-  width: 60%; /* Tamanho padrão */
+  width: 60%;
+  /* Tamanho padrão */
 }
 
 #logo:hover {
@@ -18,56 +35,53 @@
 }
 
 /* Ajustar tamanho da logo para diferentes tamanhos de tela */
-@media (min-width: 576px) { /* Telas pequenas */
+
+@media (min-width: 576px) {
+  /* Telas pequenas */
   #logo {
-    width: 40%;
+    width: 30%;
   }
 }
 
-
-@media (min-width: 768px) and (max-width: 849px) { /* Telas médias */
+@media (min-width: 768px) and (max-width: 849px) {
+  /* Telas médias */
   #logo {
-    width: 9999999999999999%;
-  }
-}
-@media (min-width: 850px) and (max-width: 991px) { /* Telas médias */
-  #logo {
-    width: 55%;
+    width: 100%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) { /* Telas grandes */
+@media (min-width: 850px) and (max-width: 991px) {
+  /* Telas médias */
   #logo {
-    width: 65%;
+    width: 80%;
   }
 }
 
-
-@media (min-width: 1200px) and (max-width: 1399px) { /* Telas extra grandes */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Telas grandes */
   #logo {
     width: 50%;
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1599px) { /* Telas extra grandes */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* Telas extra grandes */
   #logo {
-    width: 50%;
+    width: 45%;
   }
 }
 
 
-.roter  {
+.roter {
   -webkit-transition: -webkit-transform .5s ease;
   transition: transform .1s ease;
   width: 20%;
   margin-top: 3px;
-  
 }
 
-.roter:hover{
+.roter:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  color: rgb(196, 8, 8);
 }
 
 
@@ -85,4 +99,3 @@
   margin-bottom: 2px;
 
 }
-
