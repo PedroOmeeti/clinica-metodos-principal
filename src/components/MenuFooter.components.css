@@ -7,7 +7,42 @@ a{
     color: white;
 }
 .logosize{
-    width: 100%;
+    width: 40%;
     display: block;
     margin: auto;
 }
+
+@media (min-width: 576px) {
+    /* Telas pequenas */
+    #logofooter {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 849px) {
+    /* Telas médias */
+    #logofooter {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width: 991px) {
+    /* Telas médias */
+    #logofooter {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Telas grandes */
+    #logofooter {
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    /* Telas extra grandes */
+    #logofooter {
+      width: 45%;
+    }
+  }
