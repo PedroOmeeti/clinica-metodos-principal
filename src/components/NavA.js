@@ -49,7 +49,6 @@ function NavA() {
               )}
               <ModalLogin />
             </NavItem>
-
           </Nav>
         </Collapse>
 
