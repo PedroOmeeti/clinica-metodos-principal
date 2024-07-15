@@ -25,7 +25,7 @@ function Plano() {
 
 
         <Row className="corpo">
-          <Col xs="12" lg="3" className="especialidades d-flex align-items-center ms-lg-5 justify-content-center">
+          <Col xs="12" lg="3" className="especialidades d-flex align-items-center ms-lg-5 justify-content-center mb-5 mb-lg-0">
             <ul className="lista list-unstyled d-flex flex-column align-column text-lg-start text-center">
               <h2>Especialidades do nosso plano </h2>
               <li>• Clinica Geral </li>
@@ -88,7 +88,7 @@ function Plano() {
         <Row>
           <Col className="text-center mt-5 mb-5">
             <h3 className="mb-3">Também atendemos por:</h3>
-            <p className="bottom"><b>PARTICULAR <span className="text-danger">•</span> POLICLIN <span className="text-danger">•</span> UNIMED <span className="text-danger">•</span> LEVIDA <span className="text-danger">•</span> FUSEX <span className="text-danger">•</span> GAMA SAÚDE <span className="text-danger">•</span> SPA SAÚDE </b></p>
+            <p className="bottom">PARTICULAR <span className="text-danger">•</span> POLICLIN <span className="text-danger">•</span> UNIMED <span className="text-danger">•</span> LEVIDA <span className="text-danger">•</span> FUSEX <span className="text-danger">•</span> GAMA SAÚDE <span className="text-danger">•</span> SPA SAÚDE</p>
           </Col>
         </Row>
 
