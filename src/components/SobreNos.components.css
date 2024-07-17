@@ -2,7 +2,17 @@
     color: #740000;
 }
 
-.img{
-    max-width: 700px;
-    max-height: 500px;
+.equipe {
+    width: 200% !important;
+}
+
+@media (min-width: 1200px) { /* ajuste o valor conforme necessário */
+    .equipe {
+        width: 100% !important;
+    }
+}
+@media (min-width: 991px) {
+    .equipe {
+        width: 100% !important;
+    }
 }

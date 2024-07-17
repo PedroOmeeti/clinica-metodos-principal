@@ -11,13 +11,9 @@ function Plano() {
   return (
     <div>
       <Container >
-        <Row>
-          <h1 className="mt-5 text-center">Planos</h1>
-
-        </Row>
 
         <Row className="cabecalho mt-5 text-center">
-          <Col xs="12" md="12" lg="6"  className="textoimg text-center d-flex align-items-center justify-content-center">
+          <Col xs="12" md="12" lg="6" className="textoimg text-center d-flex align-items-center justify-content-center">
             <h1 className="texto mt-5 fs-4">Escolha o plano ideal para sua <span className="bordo">saúde </span> <span className="icone"><CiMedicalCross /></span></h1>
           </Col>
           <Col className="d-flex text-center justify-content-md-end justify-content-center mt-5 p-4">
@@ -29,7 +25,7 @@ function Plano() {
 
 
         <Row className="corpo">
-          <Col xs="12" lg="3" className="especialidades d-flex align-items-center ms-lg-5 justify-content-center">
+          <Col xs="12" lg="3" className="especialidades d-flex align-items-center ms-lg-5 justify-content-center mb-5 mb-lg-0">
             <ul className="lista list-unstyled d-flex flex-column align-column text-lg-start text-center">
               <h2>Especialidades do nosso plano </h2>
               <li>• Clinica Geral </li>
@@ -42,6 +38,8 @@ function Plano() {
               <li>• Nutrição </li>
               <li>• Fisioterapia </li>
               <li>• Psicopedagogia </li>
+              <hr className="mt-3 custom-hr"></hr>
+              <li className="mt-2   ">• Desconto nas consultas de Psiquiatria Infantil e Adulto </li>
             </ul>
           </Col>
           <Col xs="12" md="6" lg="4" className="d-flex justify-content-md-end justify-content-center mb-3">
@@ -85,6 +83,12 @@ function Plano() {
                 </ul>
               </CardBody>
             </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center mt-5 mb-5">
+            <h3 className="mb-3">Também atendemos por:</h3>
+            <p className="bottom">PARTICULAR <span className="text-danger">•</span> POLICLIN <span className="text-danger">•</span> UNIMED <span className="text-danger">•</span> LEVIDA <span className="text-danger">•</span> FUSEX <span className="text-danger">•</span> GAMA SAÚDE <span className="text-danger">•</span> SPA SAÚDE</p>
           </Col>
         </Row>
 

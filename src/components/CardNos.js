@@ -7,9 +7,9 @@ import "./CardNos.components.css";
 const CardNos = ({ img, especialista, especialidade }) => {
 
     return (
-        <Container fluid>
+        <Container fluid className='d-flex justify-content-center'>
             <Card
-                className="border-0 mt-3 borda mb-4 cor card"
+                className="border-0 mt-3 mb-4 cor card"
                 outline
                 style={{
                     width: '16rem'
@@ -17,14 +17,14 @@ const CardNos = ({ img, especialista, especialidade }) => {
                 }}
             >
                 <img
-                    className='d-block borda'
+                    className='d-block'
                     alt="Profissional"
-                    src= {img}
+                    src={img}
                 />
-                <CardBody >
-                    <CardTitle 
-                    className='text-center'
-                    tag="h3">
+                <CardBody className='titulo' >
+                    <CardTitle
+                        className='text-center'
+                        tag="h3">
                         {especialista}
                     </CardTitle>
                     <CardSubtitle
