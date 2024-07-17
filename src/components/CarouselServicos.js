@@ -1,17 +1,18 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaChalkboardTeacher } from 'react-icons/fa';
 import './CarouselServicos.components.css';
-import { RiPsychotherapyLine } from "react-icons/ri";
+import { RiPsychotherapyLine, RiComputerLine } from "react-icons/ri";
 import { IoNutritionOutline } from "react-icons/io5";
 import { MdHearing } from "react-icons/md";
 import { TbPhysotherapist } from "react-icons/tb";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { LuStethoscope } from "react-icons/lu";
-import { MdElderlyWoman } from "react-icons/md";
+import { MdElderlyWoman, MdGroups, MdOutlinePsychology } from "react-icons/md";
 import { GiLovers } from "react-icons/gi";
 import { ImHome } from "react-icons/im";
 import { SlBriefcase } from "react-icons/sl";
+import { IoExtensionPuzzle } from "react-icons/io5";
 
 const services = [
   { icon: <RiPsychotherapyLine />, name: 'Psicologia' },
@@ -24,6 +25,11 @@ const services = [
   { icon: <GiLovers />, name: 'Terapia de Casal' },
   { icon: <ImHome />, name: 'Terapia Familiar' },
   { icon: <SlBriefcase />, name: 'Orientação Vocacional' },
+  { icon: <RiComputerLine />, name: 'Terapia On-line' },
+  { icon: <MdGroups />, name: 'Terapia em Grupo' },
+  { icon: <MdOutlinePsychology />, name: 'Psiquiatria' },
+  { icon: <FaChalkboardTeacher />, name: 'Treinamentos Corporativos' },
+  { icon: <IoExtensionPuzzle />, name: 'ABA' },
   // Adicione mais serviços conforme necessário
 ];
 
