@@ -1,0 +1,45 @@
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 4px;
+    /* Ajuste para reduzir o espaço entre os itens */
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.02);
+}
+
+.service-item .icon {
+    font-size: 3.2rem;
+    /* Aumente o tamanho do ícone */
+    color: #992020 !important;
+    margin-bottom: 5px;
+    /* Reduza o espaço entre o ícone e o nome */
+    text-align: center;
+}
+
+.service-item .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: rgb(158, 39, 39);
+}
