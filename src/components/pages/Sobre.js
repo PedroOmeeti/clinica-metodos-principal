@@ -1,19 +1,27 @@
 import { Col, Container, Row } from "reactstrap";
-import SobreNos from "../SobreNos";
 import CardNos from "../CardNos";
 import Clinica from '../img/imagemGrande.png'
+import SobreN from '../img/sobrenosfoto.jpg'
 import Janater from '../img/janater.png'
 import Funcionarios from '../img/funcionarios.png'
 import Sala from '../img/sala_jana 1.jpg';
-import "../SobreNos.components.css";
+import "../Sobre.components.css";
 
 function Sobre() {
 
   return (
     <Container>
-      <Row>
-        <Col>
-          <SobreNos />
+
+      <Row className='align-items-center mt-5'>
+        <Col xs="12" md="12" lg="6" className="order-lg-2 order-1">
+          <h3 className="mb-2 ti ms-lg-0 ms-4">Sobre Nós</h3>
+          <h5 className='fs-4'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Donec volutpat, nisi ut auctor venenatis, velit nisl sollicitudin metus, ut aliquam libero orci eget nunc.
+          </h5>
+        </Col>
+
+        <Col xs="12" md="12" lg="6" className="order-lg-1 order-2">
+          <img className='borda d-block mb-4 w-100 img' src={SobreN} />
         </Col>
       </Row>
 
@@ -27,9 +35,6 @@ function Sobre() {
           <img src={Funcionarios} className="d-block mx-auto borda equipe" alt="Infra estrutura da clínica" />
         </Col>
       </Row>
-      
-
-      
 
       <hr />
 

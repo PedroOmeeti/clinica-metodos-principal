@@ -5,6 +5,7 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
+import CarouselServicos from "../CarouselServicos";
 import Janaina from '../img/janaina.jpg'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 
@@ -62,85 +63,12 @@ function Inicio() {
       </Container>
 
       <Container fluid>
-        <Row className="p-5 fundin text-white">
-          {/* Linha 1 */}
-          <Row>
-            <Col className="text-center fs-5">
-              <RiPsychotherapyLine className="fs-1" />
-            </Col>
-
-            <Col className="text-center fs-5">
-              <IoNutritionOutline className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <MdHearing className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <TbPhysotherapist className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <FaHandsHoldingChild className="fs-1" />
-            </Col>
-          </Row>
-          {/* oii */}
-          <Row className="mb-5">
-            <Col className="text-center fs-4">
-              Psicologia
-            </Col>
-            <Col className="text-center fs-4">
-              Nutrição
-            </Col>
-            <Col className="text-center fs-4">
-              Fonoaudiologia
-            </Col>
-            <Col className="text-center fs-4">
-              Fisioterapia
-            </Col>
-            <Col className="text-center fs-4">
-              Psicopedagogia
-            </Col>
-          </Row>
-
-          {/* Linha 2 */}
-          <Row className="mt-5">
-            <Col className="text-center fs-5">
-              <LuStethoscope className="fs-1" />
-            </Col>
-
-            <Col className="text-center fs-5">
-              <MdElderlyWoman className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <GiLovers className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <ImHome className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <SlBriefcase className="fs-1" />
-            </Col>
-          </Row>
-          <Row>
-            <Col className="text-center fs-4">
-              Clínica Geral
-            </Col>
-            <Col className="text-center fs-4">
-              Geriatria
-            </Col>
-            <Col className="text-center fs-4">
-              Terapia de Casal
-            </Col>
-            <Col className="text-center fs-4">
-              Terapia Familiar
-            </Col>
-            <Col className="text-center fs-4">
-              Orientação Vocacional
-            </Col>
-          </Row>
+        <Row>
+          <Col>
+          <CarouselServicos />
+          </Col>
         </Row>
       </Container>
-
-
 
       <Container>
         <Row className="mt-4 d-flex justify-content-center">
