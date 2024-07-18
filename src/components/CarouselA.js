@@ -7,7 +7,7 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import Carrosel1 from './img/Nova imagem.jpg'
-import Carrosel2 from './img/pscicologo.jpg'
+import Carrosel2 from './img/pscicologo nova.png'
 import Carrosel3 from './img/psicologia infantil.jpg'
 import Carrosel4 from './img/nutrição.png.jpg'
 
