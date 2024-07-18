@@ -57,15 +57,12 @@ function Inicio() {
           <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
         </Row>
-        <Row >
-          <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
-        </Row>
       </Container>
 
-      <Container fluid>
+      <Container fluid> 
         <Row>
           <Col>
-          <CarouselServicos />
+          <CarouselServicos />  
           </Col>
         </Row>
       </Container>
