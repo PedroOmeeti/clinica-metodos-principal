@@ -57,26 +57,21 @@ function Inicio() {
           <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
         </Row>
-        <Row >
-          <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
-        </Row>
       </Container>
 
-      <Container fluid>
+      <Container fluid> 
         <Row>
           <Col>
-          <CarouselServicos />
+          <CarouselServicos />  
           </Col>
         </Row>
       </Container>
 
       <Container>
-        <Row className="mt-4">
-          <Col></Col>
-          <Col>
+        <Row className="mt-4 d-flex justify-content-center">
+          <Col xs="6" md="6" lg="6" className="col-8">
             <Link className='nav-link fundin fs-4 text-center p-3 rounded-3 my-3 text-white' to="/Contato">Onde estamos localizados</Link>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
 
@@ -89,11 +84,11 @@ function Inicio() {
         </Row>
 
         <Row>
-          <Col>
+          <Col xs="12" md="12" lg="6">
             <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
 
-          <Col>
+          <Col xs="12" md="12" lg="6">
             <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
         </Row>

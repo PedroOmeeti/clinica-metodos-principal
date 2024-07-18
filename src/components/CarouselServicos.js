@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row } from "reactstrap";
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight, FaChalkboardTeacher } from 'react-icons/fa';
 import './CarouselServicos.components.css';
@@ -91,6 +92,9 @@ const ServiceCarousel = () => {
   return (
     <div className='mb-5' style={{ position: 'relative', padding: '0 50px' }}>
       <h2 className='text-center mt-5'>Nossos Serviços</h2>
+      <Row >
+        <Col className="fs-4 text-center mb-4 mt-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
+      </Row>
       <Slider {...settings}>
         {services.map((service, index) => (
           <div key={index} className="service-item">

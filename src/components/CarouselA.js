@@ -6,8 +6,13 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap';
+
 import Carrosel1 from './img/Nova imagem.jpg'
 import Carrosel2 from './img/pscicologo nova.png'
+
+import Carrosel1 from './img/carrousel1.png'
+import Carrosel2 from './img/pscicologo.jpg'
+
 import Carrosel3 from './img/psicologia infantil.jpg'
 import Carrosel4 from './img/nutrição.png.jpg'
 
@@ -16,6 +21,7 @@ const items = [
   {
     src: [Carrosel1],
     key: 1,
+    caption: 'Paciente e profissionais atuando juntos em prol da saúde',
   },
   {
     src: [Carrosel2],
@@ -68,7 +74,6 @@ function CarouselA() {
       >
         <img src={item.src} alt={item.altText} className='img-fluid' />
         <CarouselCaption
-          captionText={item.caption}
           captionHeader={item.caption}
         />
       </CarouselItem>
