@@ -10,6 +10,7 @@ import Carrosel1 from './img/carrousel1.png'
 import Carrosel2 from './img/pscicologo.jpg'
 import Carrosel3 from './img/psicologia infantil.jpg'
 import Carrosel4 from './img/nutrição.png.jpg'
+import "./CarouselA.components.css"
 
 
 const items = [
@@ -17,19 +18,23 @@ const items = [
     src: [Carrosel1],
     key: 1,
     caption: 'Paciente e profissionais atuando juntos em prol da saúde',
+    captionClass: 'caption1',
   },
   {
     src: [Carrosel2],
     key: 2,
+    captionClass: 'caption2',
   },
   {
     src: [Carrosel3],
     key: 3,
+    captionClass: 'caption3',
   },
   
   {
     src: [Carrosel4],
     key: 4,
+    captionClass: 'caption4',
   }
   
 
@@ -69,8 +74,9 @@ function CarouselA() {
       >
         <img src={item.src} alt={item.altText} className='img-fluid' />
         <CarouselCaption
-          captionHeader={item.caption}
-        />
+            captionHeader={item.caption}
+            className={item.captionClass}
+          />
       </CarouselItem>
     );
   });
