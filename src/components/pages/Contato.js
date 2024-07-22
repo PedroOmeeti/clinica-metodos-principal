@@ -45,8 +45,8 @@ function Contato() {
               Enviar
             </Button>
           </Col>
-          <Col xs="12" md="6">
-            <h2>Informações</h2>
+          <Col xs="12" md="6" className="text-lg-start text-md-start text-center">
+            <h2 className="text-center mt-4">Informações</h2>
             <p>
               <p className="h5">Telefone</p>
             </p>
@@ -71,7 +71,7 @@ function Contato() {
       <Container fluid className="Background-Conteudo text-white pb-3">
         <Container>
           <Row>
-            <Col xs='12' sm='6' className="mt-5 p-5">
+            <Col xs="12" md="6" lg="6" className="mt-lg-5 p-5">
               <p className="text-center fs-1"><FaHandHoldingMedical /></p>
               <hr />
               {/* <p className="h5">Clinica Renovar Saude Centro</p>
@@ -86,7 +86,7 @@ function Contato() {
                 <p><FaMapMarkerAlt /> Av. dos Autonomistas, 896, Centro, Taubaté - SP, 12404-372</p>
                 <p><FaPhoneAlt /> (12) 4002-8922</p> */}
             </Col>
-            <Col className="d-flex align-self-center mt-5 mb-5" xs='12' sm='6'>
+            <Col className="d-flex align-self-center mt-lg-5 mt-sm-5 mb-5" xs="12" md="6" lg="6">
               <div className="mapouter">
                 <div className="gmap_canvas">
 

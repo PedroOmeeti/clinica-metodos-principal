@@ -97,7 +97,7 @@ const Agendamento = () => {
             
             
             <Row>
-              <Col>
+              <Col className='text-lg-start text-md-start text-center mt-4'>
                 <Button type="submit" className='secondary'>Agendar</Button>
               </Col>
             </Row> 

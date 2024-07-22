@@ -5,6 +5,7 @@ import {
   List
 } from "reactstrap";
 import CarouselA from "../CarouselA";
+import CarouselServicos from "../CarouselServicos";
 import Janaina from '../img/janaina.jpg'
 // import Emojisorrindo from '../img/emojisorrindo.png'
 
@@ -48,7 +49,7 @@ function Inicio() {
         </Row>
         <Row>
           <Col className="text-center mt-3">
-            <p className="fs-4">Nossa equipe de profissionais altamente qualificados está comprometida em oferecer serviços de saúde abrangentes e personalizados. Desde consultas médicas até terapias alternativas, estamos aqui para ajudar você a renovar sua saúde e qualidade de vida. Venha nos visitar e descubra o caminho para uma vida mais saudável e feliz!</p>
+            <p className="fs-4">A Métodos Clínica foi inaugurada em março de 2020, sendo fundada pela Empresária e Psicóloga Janaina Gomes. Nossa equipe possui profissionais e colaboradores altamente qualificados e comprometidos em oferecer serviços de saúde abrangentes e personalizados. Nosso foco é a saúde mental e emocional da população, proporcionando atendimentos com terapias alternativas e consultas, visando a qualidade de vida. Venha nos visitar e descubra o caminho para uma vida mais saudável e feliz!</p>
           </Col>
         </Row>
         <Row>
@@ -56,99 +57,21 @@ function Inicio() {
           <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
           </Col>
         </Row>
-        <Row >
-          <Col className="fs-4 text-center mb-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
-        </Row>
       </Container>
 
-      <Container fluid>
-        <Row className="p-5 fundin text-white">
-          {/* Linha 1 */}
-          <Row>
-            <Col className="text-center fs-5">
-              <RiPsychotherapyLine className="fs-1" />
-            </Col>
-
-            <Col className="text-center fs-5">
-              <IoNutritionOutline className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <MdHearing className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <TbPhysotherapist className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <FaHandsHoldingChild className="fs-1" />
-            </Col>
-          </Row>
-          {/* oii */}
-          <Row className="mb-5">
-            <Col className="text-center fs-4">
-              Psicologia
-            </Col>
-            <Col className="text-center fs-4">
-              Nutrição
-            </Col>
-            <Col className="text-center fs-4">
-              Fonoaudiologia
-            </Col>
-            <Col className="text-center fs-4">
-              Fisioterapia
-            </Col>
-            <Col className="text-center fs-4">
-              Psicopedagogia
-            </Col>
-          </Row>
-
-          {/* Linha 2 */}
-          <Row className="mt-5">
-            <Col className="text-center fs-5">
-              <LuStethoscope className="fs-1" />
-            </Col>
-
-            <Col className="text-center fs-5">
-              <MdElderlyWoman className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <GiLovers className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <ImHome className="fs-1" />
-            </Col>
-            <Col className="text-center fs-4">
-              <SlBriefcase className="fs-1" />
-            </Col>
-          </Row>
-          <Row>
-            <Col className="text-center fs-4">
-              Clínica Geral
-            </Col>
-            <Col className="text-center fs-4">
-              Geriatria
-            </Col>
-            <Col className="text-center fs-4">
-              Terapia de Casal
-            </Col>
-            <Col className="text-center fs-4">
-              Terapia Familiar
-            </Col>
-            <Col className="text-center fs-4">
-              Orientação Vocacional
-            </Col>
-          </Row>
+      <Container fluid> 
+        <Row>
+          <Col>
+          <CarouselServicos />  
+          </Col>
         </Row>
       </Container>
-
-
 
       <Container>
-        <Row className="mt-4">
-          <Col></Col>
-          <Col>
+        <Row className="mt-4 d-flex justify-content-center">
+          <Col xs="6" md="6" lg="6" className="col-8">
             <Link className='nav-link fundin fs-4 text-center p-3 rounded-3 my-3 text-white' to="/Contato">Onde estamos localizados</Link>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
 
@@ -161,11 +84,11 @@ function Inicio() {
         </Row>
 
         <Row>
-          <Col>
+          <Col xs="12" md="12" lg="6">
             <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
 
-          <Col>
+          <Col xs="12" md="12" lg="6">
             <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
         </Row>
