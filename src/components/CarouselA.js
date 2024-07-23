@@ -31,12 +31,14 @@ const items = [
   },
   {
     src: [Carrosel3],
+    caption: 'FONOAUDIÓLOGA',
     key: 3,
     captionClass: 'caption3',
   },
 
   {
     src: [Carrosel4],
+    caption: 'NUTRIÇÃO',
     key: 4,
     captionClass: 'caption4',
   }
