@@ -43,11 +43,8 @@ function NavA() {
               <NavLink id='roter' className='nav-link cor-texto' to="/Agende" activeClassName="active">Agende</NavLink>
             </NavItem>
             <NavItem className='d-flex justify-content-center'>
-            {isOpen && (
-                <span className="d-md-none d-inline cor-texto d-flex align-items-center p-2">Login
-                </span>
-              )}
-              <ModalLogin />
+            <a href="http://localhost:3001/Login"><ModalLogin /></a>
+              
             </NavItem>
           </Nav>
         </Collapse>

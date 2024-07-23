@@ -44,7 +44,7 @@ function ModalLogin(args) {
       } else {
         localStorage.setItem('token', token);
         if(tokenDecoded.tipo === 6) {
-          navigate('/Adm');
+          navigate('http://localhost:3001');
         }
         
       }

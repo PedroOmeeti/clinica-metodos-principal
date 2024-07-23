@@ -30,6 +30,21 @@ const Agendamento = () => {
           </Col>
           
           <Col>
+
+            <Row>
+              <Col> 
+                <FormGroup>
+                  <Label for="email">Email:</Label>
+                  <Input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Insira seu email"
+                    required
+                  />
+                </FormGroup>
+              </Col>
+            </Row>
             
             <Row>
               <Col>
