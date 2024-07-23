@@ -20,6 +20,7 @@ import { FaHandsHoldingChild } from "react-icons/fa6";
 
 
 import Sala from '../img/sala_jana.jpg'
+import recepcao from '../img/recepcao.jpeg'
 
 import { LuStethoscope } from "react-icons/lu";
 import { MdElderlyWoman } from "react-icons/md";
@@ -90,10 +91,12 @@ function Inicio() {
 
         <Row>
           <Col>
-            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
+            <h3 className="mt-4 text-center">Recepção</h3>
+            <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={recepcao}></img>
           </Col>
 
           <Col>
+            <h3 className="mt-4 text-center">Sala de Espera</h3>
             <img className="img-fluid Image-height d-block mx-auto my-5 rounded-2 imagem-ambiente" src={Sala}></img>
           </Col>
         </Row>
