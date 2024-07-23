@@ -1,17 +1,6 @@
-.caption1 h3 {
 
-    background-color: rgb(155, 0, 0) !important;
-    border-radius: 20px;
-    padding: 10px 20px;
-    display: inline-block; 
-  }
-.caption2 h3 {
-    background-color: rgb(155, 0, 0) !important;
-    border-radius: 30px;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 50px; 
-  }
+
+  .caption1 h3, .caption2 h3, .caption3 h3, .caption4 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: rgb(255, 255, 255); /* Cor principal no centro */
