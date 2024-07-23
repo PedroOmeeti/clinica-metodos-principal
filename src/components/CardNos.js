@@ -17,7 +17,7 @@ const CardNos = ({ img, especialista, especialidade }) => {
                 }}
             >
                 <img
-                    className='d-block'
+                    className='d-block foto'
                     alt="Profissional"
                     src={img}
                 />
