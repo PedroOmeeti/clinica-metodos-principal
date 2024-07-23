@@ -15,8 +15,8 @@ import {
 import Carrosel1 from './img/carrousel1.png'
 import Carrosel2 from './img/psicologo novo.png'
 
-import Carrosel3 from './img/psicologia infantil.jpg'
-import Carrosel4 from './img/nutrição.png.jpg'
+import Carrosel3 from './img/fonocarrossel.png'
+import Carrosel4 from './img/nutricao.png'
 import "./CarouselA.components.css"
 
 
@@ -35,12 +35,14 @@ const items = [
   },
   {
     src: [Carrosel3],
+    caption: 'FONOAUDIÓLOGA',
     key: 3,
     captionClass: 'caption3',
   },
 
   {
     src: [Carrosel4],
+    caption: 'NUTRIÇÃO',
     key: 4,
     captionClass: 'caption4',
   }
