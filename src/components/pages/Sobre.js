@@ -10,7 +10,13 @@ import Clinica from '../img/imagemGrande.png'
 import Fisio from '../img/fisio.png'
 import Fisiom from '../img/fisiom.jpg'
 import Fono from '../img/fono.jpg'
-import Nsei from '../img/nsei.png'
+import Geral from '../img/geral.png'
+import Psicologo from '../img/psicologo.png'
+import Psicopedagoga from '../img/psicopedagoga.png'
+import Psicologa from '../img/psicologa.png'
+import Psiquiatra from '../img/psiquiatra.png'
+import Psicologa2 from '../img/psicologa2.png'
+import Psicologa3 from '../img/psicologa3.png'
 
 function Sobre() {
 
@@ -68,22 +74,37 @@ function Sobre() {
         </Col>
       </Row>
 
-      <Row >
+      <Row className="d-flex justify-content-center">
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Nsei} especialista="Nsei" especialidade="Nutricionista" />
+          <CardNos img={Geral} especialista="Jéssica" especialidade="Clínica geral" />
         </Col>
 
+        
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+          <CardNos img={Psicopedagoga} especialista="Jaciane" especialidade="Psicopedagogia" />
         </Col>
 
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+      
+        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
+          <CardNos img={Psiquiatra} especialista="Diego" especialidade="Psiquiatria" />
         </Col>
 
         <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+          <CardNos img={Psicologa} especialista="Fabiana" especialidade="Psicologia" />
         </Col>
+
+        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
+          <CardNos img={Psicologa2} especialista="Teresa" especialidade="Psicologia" />
+        </Col>
+
+        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
+          <CardNos img={Psicologa3} especialista="Maiara" especialidade="Psicologia" />
+        </Col>
+
+        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+          <CardNos img={Psicologo} especialista="Vinícius" especialidade="Psicologia" />
+        </Col>
+
         <hr />
       </Row>
 
