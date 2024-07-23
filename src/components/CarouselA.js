@@ -26,9 +26,7 @@ const items = [
   {
     src: [Carrosel2],
     key: 2,
-
     caption: 'PSICOLOGIA',
-
     captionClass: 'caption2',
   },
   {
@@ -36,13 +34,13 @@ const items = [
     key: 3,
     captionClass: 'caption3',
   },
-  
+
   {
     src: [Carrosel4],
     key: 4,
     captionClass: 'caption4',
   }
-  
+
 
 
 ];
@@ -84,10 +82,6 @@ function CarouselA() {
           captionHeader={item.caption}
           className={item.captionClass}
         />
-
-            captionHeader={item.caption}
-            className={item.captionClass}
-          />
 
       </CarouselItem>
     );
