@@ -7,9 +7,6 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 
-import Carrosel1 from './img/Nova imagem.jpg'
-import Carrosel2 from './img/pscicologo nova.png'
-
 import Carrosel1 from './img/carrousel1.png'
 import Carrosel2 from './img/pscicologo.jpg'
 
