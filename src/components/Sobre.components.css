@@ -1,4 +1,4 @@
-.ti{
+.ti {
     color: #740000 !important;
 }
 
@@ -6,13 +6,20 @@
     width: 200% !important;
 }
 
-@media (min-width: 1200px) { /* ajuste o valor conforme necessário */
+@media (min-width: 1200px) {
+
+    /* ajuste o valor conforme necessário */
     .equipe {
         width: 100% !important;
     }
 }
+
 @media (min-width: 991px) {
     .equipe {
         width: 100% !important;
     }
+}
+
+.fun {
+    border-radius: 25px;
 }
