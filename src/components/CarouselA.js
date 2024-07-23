@@ -1,3 +1,4 @@
+import "./CarouselA.components.css";
 import React, { useState } from 'react';
 import {
   Carousel,
@@ -8,7 +9,7 @@ import {
 } from 'reactstrap';
 
 import Carrosel1 from './img/carrousel1.png'
-import Carrosel2 from './img/pscicologo.jpg'
+import Carrosel2 from './img/psicologo novo.png'
 
 import Carrosel3 from './img/psicologia infantil.jpg'
 import Carrosel4 from './img/nutrição.png.jpg'
@@ -25,6 +26,9 @@ const items = [
   {
     src: [Carrosel2],
     key: 2,
+
+    caption: 'PSICOLOGIA',
+
     captionClass: 'caption2',
   },
   {
@@ -76,9 +80,15 @@ function CarouselA() {
       >
         <img src={item.src} alt={item.altText} className='img-fluid' />
         <CarouselCaption
+
+          captionHeader={item.caption}
+          className={item.captionClass}
+        />
+
             captionHeader={item.caption}
             className={item.captionClass}
           />
+
       </CarouselItem>
     );
   });
