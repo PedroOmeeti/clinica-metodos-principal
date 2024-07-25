@@ -66,27 +66,27 @@ function Sobre() {
         <Row className="d-flex justify-content-center text-center">
         <h1 className="mb-2 ti ms-lg-0 ms-4">Saúde Mental</h1>
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Psicologa} especialista="Martins" especialidade="Psicologia" />
+            <CardNos img={Psicologa} especialista="Fabiana Martins" especialidade="Psicologia" />
           </Col>
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Psicologa2} especialista="Alves" especialidade="Psicologia" />
+            <CardNos img={Psicologa2} especialista="Teresa Alves" especialidade="Psicologia" />
           </Col>
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Psicologa3} especialista="Estéfane" especialidade="Psicologia" />
+            <CardNos img={Psicologa3} especialista="Maiara Estéfane" especialidade="Psicologia" />
           </Col>
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Psicologo} especialista="Oliveira" especialidade="Psicologia" />
+            <CardNos img={Psicologo} especialista="Vinícius Oliveira" especialidade="Psicologia" />
           </Col>
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Janaina} especialista="Gomes" especialidade="Psicologia" />
+            <CardNos img={Janaina} especialista="Janaina Gomes" especialidade="Psicologia" />
           </Col>
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Psicopedagoga} especialista="Ferreira" especialidade="Psicopedagogia" />
+            <CardNos img={Psicopedagoga} especialista="Jaciane Ferreira" especialidade="Psicopedagogia" />
           </Col>
 
           <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-            <CardNos img={Psiquiatra} especialista="Tajes" especialidade="Psiquiatria" />
+            <CardNos img={Psiquiatra} especialista="Diego Tajes" especialidade="Psiquiatria" />
           </Col>
         </Row>
 
@@ -103,19 +103,19 @@ function Sobre() {
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
 
-            <CardNos img={Fisio} especialista="Aurélio" especialidade="Fisioterapia" />
+            <CardNos img={Fisio} especialista="Maicon Aurélio" especialidade="Fisioterapia" />
           </Col>
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Fisiom} especialista="Cristina" especialidade="Fisioterapia" />
+            <CardNos img={Fisiom} especialista="Angela Cristina" especialidade="Fisioterapia" />
           </Col>
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Fono} especialista="Pini" especialidade="Fonoaudiologia" />
+            <CardNos img={Fono} especialista="Jacquelini Pini" especialidade="Fonoaudiologia" />
           </Col>
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Fono2} especialista="Adriana" especialidade="Fonoaudiologia" />
+            <CardNos img={Fono2} especialista="Maria Adriana" especialidade="Fonoaudiologia" />
           </Col>
 
         </Row>
@@ -151,11 +151,11 @@ function Sobre() {
           <h1 className="mb-2 ti ms-lg-0 ms-4">Recepção</h1>
 
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Yasmim} especialista="Yasmim" especialidade="Auxiliar de Faturamento" />
+          <CardNos img={Yasmim} especialista="Yasmim Araújo" especialidade="Auxiliar de Faturamento" />
         </Col>
 
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Duda} especialista="Eduarda" especialidade="Recepcionista" />
+          <CardNos img={Duda} especialista="Maria Eduarda" especialidade="Recepcionista" />
         </Col>
 
         </Row>
