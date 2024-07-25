@@ -10,13 +10,18 @@ import Clinica from '../img/imagemGrande.png'
 import Fisio from '../img/fisio.png'
 import Fisiom from '../img/fisiom.jpg'
 import Fono from '../img/fono.jpg'
-import Geral from '../img/geral.png'
+import Fono2 from '../img/fono2.jpg'
+import Geral from '../img/geral.jpg'
 import Psicologo from '../img/psicologo.png'
 import Psicopedagoga from '../img/psicopedagoga.png'
 import Psicologa from '../img/psicologa.png'
 import Psiquiatra from '../img/psiquiatra.png'
 import Psicologa2 from '../img/psicologa2.png'
 import Psicologa3 from '../img/psicologa3.png'
+import Janaina from '../img/janaina2.jpg'
+import Yasmim from '../img/yasmim.jpg'
+import Duda from '../img/duda.png'
+import Nutri2 from '../img/nutri2.png'
 
 function Sobre() {
 
@@ -56,55 +61,105 @@ function Sobre() {
         <p className="fs-4">Os profissionais parceiros e atuantes na Métodos, são comprometidos, qualificados e excelentes para acolher e identificarem as demandas dos pacientes e famílias.</p>
       </Row>
 
-      <Row className="mt-5">
+      <Row className="mt-5 d-flex justify-content-center">
+
+        <Row className="d-flex justify-content-center text-center">
+        <h1 className="mb-2 ti ms-lg-0 ms-4">Saúde Mental</h1>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa} especialista="Martins" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa2} especialista="Alves" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa3} especialista="Estéfane" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologo} especialista="Oliveira" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Janaina} especialista="Gomes" especialidade="Psicologia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicopedagoga} especialista="Ferreira" especialidade="Psicopedagogia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
+            <CardNos img={Psiquiatra} especialista="Tajes" especialidade="Psiquiatria" />
+          </Col>
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <Row>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Fisioterapia</h1>
+            </Col>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Fonoaudiologia</h1>
+            </Col>
+
+          </Row>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+
+            <CardNos img={Fisio} especialista="Aurélio" especialidade="Fisioterapia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fisiom} especialista="Cristina" especialidade="Fisioterapia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fono} especialista="Pini" especialidade="Fonoaudiologia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fono2} especialista="Adriana" especialidade="Fonoaudiologia" />
+          </Col>
+
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <Row>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Nutrição</h1>
+            </Col>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Clinica Geral</h1>
+            </Col>
+          </Row>
+          
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Clinica} especialista="Gabriela Cristina" especialidade="Nutrição" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Nutri2} especialista="Cristina zacardi" especialidade="Nutrição" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Geral} especialista="Jéssica Freitas" especialidade="Clínica geral" />
+          </Col>
+
+        </Row >
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <h1 className="mb-2 ti ms-lg-0 ms-4">Recepção</h1>
+
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+          <CardNos img={Yasmim} especialista="Yasmim" especialidade="Auxiliar de Faturamento" />
         </Col>
 
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Fisio} especialista="Maicon" especialidade="Fisioterapia" />
+          <CardNos img={Duda} especialista="Eduarda" especialidade="Recepcionista" />
         </Col>
 
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Fisiom} especialista="Angela" especialidade="Fisioterapia" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Fono} especialista="Jacquelini" especialidade="Fonoaudiologia" />
-        </Col>
-      </Row>
-
-      <Row className="d-flex justify-content-center">
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Geral} especialista="Jéssica" especialidade="Clínica geral" />
-        </Col>
-
+        </Row>
         
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Psicopedagoga} especialista="Jaciane" especialidade="Psicopedagogia" />
-        </Col>
-
-      
-        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Psiquiatra} especialista="Diego" especialidade="Psiquiatria" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Psicologa} especialista="Fabiana" especialidade="Psicologia" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Psicologa2} especialista="Teresa" especialidade="Psicologia" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Psicologa3} especialista="Maiara" especialidade="Psicologia" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Psicologo} especialista="Vinícius" especialidade="Psicologia" />
-        </Col>
-
         <hr />
       </Row>
 

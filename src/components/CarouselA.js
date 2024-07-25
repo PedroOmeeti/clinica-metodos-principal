@@ -35,7 +35,7 @@ const items = [
   },
   {
     src: [Carrosel3],
-    caption: 'FONOAUDIÓLOGA',
+    caption: 'FONOAUDIOLOGIA',
     key: 3,
     captionClass: 'caption3',
   },
