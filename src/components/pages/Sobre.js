@@ -1,11 +1,27 @@
 import { Col, Container, Row } from "reactstrap";
 import CardNos from "../CardNos";
-import Clinica from '../img/imagemGrande.png'
 import SobreN from '../img/sobrenosfoto.jpg'
 import Janater from '../img/janater.png'
 import Funcionarios from '../img/funcionarios.png'
 import Sala from '../img/sala_jana 1.jpg';
 import "../Sobre.components.css";
+
+import Clinica from '../img/imagemGrande.png'
+import Fisio from '../img/fisio.png'
+import Fisiom from '../img/fisiom.jpg'
+import Fono from '../img/fono.jpg'
+import Fono2 from '../img/fono2.jpg'
+import Geral from '../img/geral.jpg'
+import Psicologo from '../img/psicologo.png'
+import Psicopedagoga from '../img/psicopedagoga.png'
+import Psicologa from '../img/psicologa.png'
+import Psiquiatra from '../img/psiquiatra.png'
+import Psicologa2 from '../img/psicologa2.png'
+import Psicologa3 from '../img/psicologa3.png'
+import Janaina from '../img/janaina2.jpg'
+import Yasmim from '../img/yasmim.jpg'
+import Duda from '../img/duda.png'
+import Nutri2 from '../img/nutri2.png'
 
 function Sobre() {
 
@@ -16,23 +32,25 @@ function Sobre() {
         <Col xs="12" md="12" lg="6" className="order-lg-2 order-1">
           <h3 className="mb-2 ti ms-lg-0 ms-4">Sobre Nós</h3>
           <p className='fs-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Donec volutpat, nisi ut auctor venenatis, velit nisl sollicitudin metus, ut aliquam libero orci eget nunc.
+            A Métodos Clínica foi inaugurada no período da pandemia em março de 2020 pela profissional Psicóloga e Empresária Janaina Gomes, que anteriormente, tinha o consultório de Psicologia desde 2013.
+            O nome Métodos surgiu com a  proposta de ser um espaço de acolhimento familiar na área da saúde mental.
+            A visão da clinica é promover prevenção e promoção de saúde para a população com atendimento especializado e de qualidade.
           </p>
         </Col>
 
         <Col xs="12" md="12" lg="6" className="order-lg-1 order-2">
-          <img className='borda d-block mb-4 w-100 img' src={SobreN} />
+          <img className='borda d-block mb-4 w-100 fun' src={SobreN} />
         </Col>
       </Row>
 
       <Row className="mt-5 mb-5 align-items-center p-3">
         <Col xs="12" md="12" lg="6" className="col-6">
           <h3 className="mb-2 ti ms-lg-0 ms-4">Equipe</h3>
-          <p className="fs-4 ms-1">O trabalho em equipe na clínica de psicologia é fundamental para garantir um atendimento completo e de qualidade, desde a recepção calorosa até o acompanhamento psicológico especializado. Cada profissional contribui com suas habilidades e conhecimentos específicos, criando um ambiente acolhedor e propício para o cuidado da saúde mental.</p>
+          <p className="fs-4 ms-1">A Equipe de profissionais, são capacitados e periodicamente realizam treinamentos e reuniões com embasamento teórico e prático para desenvolver novas estratégias de atendimentos e projetos em prol da saúde emocional e mental dos pacientes.</p>
         </Col>
 
         <Col className="col-6 ms-lg-0 ms-3 mt-3">
-          <img src={Funcionarios} className="d-block mx-auto borda equipe" alt="Infra estrutura da clínica" />
+          <img src={Funcionarios} className="d-block mx-auto borda equipe fun" alt="Infra estrutura da clínica" />
         </Col>
       </Row>
 
@@ -40,54 +58,122 @@ function Sobre() {
 
       <Row className="mt-5 ms-1">
         <h1 className="mb-2 ti ms-lg-0 ms-4">Profissionais</h1>
-        <p className="fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p className="fs-4">Os profissionais parceiros e atuantes na Métodos, são comprometidos, qualificados e excelentes para acolher e identificarem as demandas dos pacientes e famílias.</p>
       </Row>
 
-      <Row className="mt-5">
+      <Row className="mt-5 d-flex justify-content-center">
+
+        <Row className="d-flex justify-content-center text-center">
+        <h1 className="mb-2 ti ms-lg-0 ms-4">Saúde Mental</h1>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa} especialista="Martins" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa2} especialista="Alves" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologa3} especialista="Estéfane" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicologo} especialista="Oliveira" especialidade="Psicologia" />
+          </Col>
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Janaina} especialista="Gomes" especialidade="Psicologia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Psicopedagoga} especialista="Ferreira" especialidade="Psicopedagogia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
+            <CardNos img={Psiquiatra} especialista="Tajes" especialidade="Psiquiatria" />
+          </Col>
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <Row>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Fisioterapia</h1>
+            </Col>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Fonoaudiologia</h1>
+            </Col>
+
+          </Row>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+
+            <CardNos img={Fisio} especialista="Aurélio" especialidade="Fisioterapia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fisiom} especialista="Cristina" especialidade="Fisioterapia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fono} especialista="Pini" especialidade="Fonoaudiologia" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Fono2} especialista="Adriana" especialidade="Fonoaudiologia" />
+          </Col>
+
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+
+        </Row>
+
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <Row>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Nutrição</h1>
+            </Col>
+            <Col>
+            <h1 className="mb-2 ti ms-lg-0 ms-4">Clinica Geral</h1>
+            </Col>
+          </Row>
+          
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Clinica} especialista="Gabriela Cristina" especialidade="Nutrição" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Nutri2} especialista="Cristina zacardi" especialidade="Nutrição" />
+          </Col>
+
+          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+            <CardNos img={Geral} especialista="Jéssica Freitas" especialidade="Clínica geral" />
+          </Col>
+
+        </Row >
+        <Row className="mt-5 d-flex justify-content-center text-center">
+          <h1 className="mb-2 ti ms-lg-0 ms-4">Recepção</h1>
+
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+          <CardNos img={Yasmim} especialista="Yasmim" especialidade="Auxiliar de Faturamento" />
         </Col>
 
         <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
+          <CardNos img={Duda} especialista="Eduarda" especialidade="Recepcionista" />
         </Col>
 
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
-      </Row>
-
-      <Row >
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
-
-        <Col xs="6" md="6" lg="6 " xl="3" className="col-3">
-          <CardNos img={Clinica} especialista="Gabriela" especialidade="Nutricionista" />
-        </Col>
+        </Row>
+        
         <hr />
       </Row>
 
       <Row className="mt-5 mb-5 align-items-center p-3">
         <Col xs="12" md="12" lg="6" className="order-lg-1 order-2 mt-3">
-          <img src={Janater} className="img-fluid Image-height d-block mx-auto borda img" alt="Infra estrutura da clínica" />
+          <img src={Janater} className="img-fluid Image-height d-block mx-auto borda fun" alt="Infra estrutura da clínica" />
         </Col>
 
         <Col xs="12" md="12" lg="6" className="order-lg-2 order-1">
-          <h3 className="ti ms-lg-0 ms-4">Equipe</h3>
-          <p className="fs-4">Acreditamos que a felicidade é fundamental para uma vida saudável, por isso, oferecemos uma ampla gama de serviços, desde consultas e exames até programas de acompanhamento contínuo. Na Clínica Métodos, você encontra uma equipe comprometida em cuidar de você e de sua família com excelência e dedicação.</p>
+          <h3 className="ti ms-lg-0 ms-4">Corpo Clínico</h3>
+          <p className="fs-4">O profissionalismo dos profissionais contribui com um atendimento humanizado de nossos pacientes.
+            Periodicamente, existe a reunião com todos os profissionais, e mensalmente, as discussões de casos entre Psicólogos, sendo supervisionados pela responsável Técnica Psicóloga Janaina Gomes.
+            Em casos, de pacientes que realizam atendimentos com a equipe, os profissionais realizam debates sobre as possibilidades de intervenções nos âmbitos terapêuticos, familiares e escolares.
+            A equipe busca exercer de maneira ética, profissional e zelosa a melhora do quadro clínico do paciente.</p>
         </Col>
       </Row>
 
@@ -99,7 +185,7 @@ function Sobre() {
         </Col>
 
         <Col xs="12" md="12" lg="6" className="col-6 mt-3">
-          <img src={Sala} className="img-fluid Image-height d-block mx-auto borda img" alt="Infra estrutura da clínica" />
+          <img src={Sala} className="img-fluid Image-height d-block mx-auto borda fun" alt="Infra estrutura da clínica" />
         </Col>
       </Row>
     </Container>
