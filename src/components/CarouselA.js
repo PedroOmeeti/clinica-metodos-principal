@@ -9,9 +9,6 @@ import {
 } from 'reactstrap';
 
 
-
-
-
 import Carrosel1 from './img/carrousel1.png'
 import Carrosel2 from './img/psicologo novo.png'
 
