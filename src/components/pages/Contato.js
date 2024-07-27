@@ -1,10 +1,51 @@
-import { Button, Col, Container, Row } from "reactstrap";
+import { Button, Col, Container, Input, Label, Row } from "reactstrap";
 import ItemForm from "../ItemForm";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaInstagram, FaFacebookSquare, FaHandHoldingMedical, FaMapMarkerAlt } from "react-icons/fa";
 import "../Contato.components.css";
 import { IoChatbubbles } from "react-icons/io5";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 function Contato() {
+
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [mensagem, setMensagem] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const serviceId = 'service_2vy1ify';
+    const templateId = 'template_tj7cce2';
+    const publicKey = 'hhlr88uannMLQMdJY';
+    
+    const templateParams = {
+      from_name: nome,
+      email: email,
+      to_name: 'clinica-metodos',
+      message: mensagem,
+      reply_to: email
+
+    };
+    
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+       setNome('');
+       setEmail('');
+       setMensagem('');
+    }).catch(function(error) {
+       console.log('FAILED...', error);
+    });
+    
+    
+    
+    // Limpa os campos do formulário
+    setNome('');
+    setEmail('');
+    setMensagem('');
+  };
+
   return (
     <div>
       <Container>
@@ -15,35 +56,42 @@ function Contato() {
             <p>Queremos saber a sua opinião, sugestão, dúvida ou elogio sobre o nosso trabalho. Por favor, preencha o formulário abaixo e deixe sua mensagem. Em breve, entraremos em contato com você.</p>
           </Col>
         </Row>
+        
         <Row className="mb-5">
           <Col className="border p-3" xs="12" md="6">
-            <ItemForm
-              label="Nome"
-              name="nome"
-              type="text"
-              ph="Digite seu nome"
-            />
-            <ItemForm
-              label="Email"
-              name="email"
-              type="email"
-              ph="Digite seu email"
-            />
-            <ItemForm
-              label="Telefone com DDD"
-              name="telefone"
-              type="tel"
-              ph="Telefone ou Whatsapp"
-            />
-            <ItemForm
-              label="Conte um pouco sobre o que precisa"
-              name="mensagem"
-              type="textarea"
-              ph="Deixe sua mensagem"
-            />
-            <Button className="secondary text-white" color="white" block>
-              Enviar
-            </Button>
+            <form onSubmit={handleSubmit}>
+                <Label for="nome">Nome:</Label>
+                <Input
+                  className="mb-3"
+                  onChange={(e) => setNome(e.target.value)}
+                  value={nome}
+                  name="nome"
+                  type="text"
+                  placeholder="Digite seu nome"
+                />
+                <Label for="email">Email:</Label>
+                <Input
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  className="mb-3"
+                  name="email"
+                  type="email"
+                  placeholder="Digite seu email"
+                />
+              
+                <Label for="mensagem">Nos envie uma mensagem:</Label>
+                <Input
+                  onChange={(e) => setMensagem(e.target.value)}
+                  value={mensagem}
+                  className="mb-3"
+                  name="mensagem"
+                  type="textarea"
+                  placeholder="Deixe sua mensagem"
+                />
+                <Button type="submit" className="secondary text-white" color="white" block>
+                  Enviar
+                </Button>
+            </form>
           </Col>
           <Col xs="12" md="6" className="text-lg-start text-md-start text-center">
             <h2 className="text-center mt-4">Informações</h2>
@@ -67,6 +115,7 @@ function Contato() {
             <a id="rede2" className="fs-1" href="https://www.facebook.com/metodosclinica" target="_blank"><FaFacebookSquare /></a>
           </Col>
         </Row>
+        
       </Container>
       <Container fluid className="Background-Conteudo text-white pb-3">
         <Container>
