@@ -60,6 +60,7 @@ function Contato() {
         <Row className="mb-5">
           <Col className="border p-3" xs="12" md="6">
             <form onSubmit={handleSubmit}>
+            <h2 className="text-center mt-4 mb-4">Nos envie uma mensagem</h2>
                 <Label for="nome">Nome:</Label>
                 <Input
                   className="mb-3"
