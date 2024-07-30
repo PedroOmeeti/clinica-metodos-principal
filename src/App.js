@@ -64,7 +64,7 @@ function AnimatedRoutes() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/plano" element={<Plano />} />
           <Route path="/contato" element={<Contato />} />
-          <Route path="/agende" element={<Agende />} />
+          {/* <Route path="/agende" element={<Agende />} /> */}
           <Route path="/adm" element={<Adm />} />
         </Routes>
       </CSSTransition>
