@@ -38,42 +38,11 @@ function ModalRegister(args) {
   const [estado, setEstado] = useState('');
   const [complemento, setComplemento] = useState('');
 
-  const handleRegister = async () => {
-    try {
-      const response = await fetch('http://localhost:3010/usuarios/cadastrar', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          "cpf": cpf, 
-          "data_nasc": data_nasc,
-          "email": email,
-          "nome": nome,
-          "senha": senha,
-          "tipo": 1,
-          "telefone1": telefone1,
-          "telefone2": telefone2,
-          "cep": cep,
-          "rua": rua,
-          "bairro": bairro,
-          "numero": numero,
-          "cidade": cidade,
-          "estado": estado,
-          "complemento": complemento
-        }),
-      });
-      console.log("Registrado");
-      const data = await response.json();
-      console.log(data)
-
-    } catch (error) {
-      console.error(error);
-    }
+  
     
     
     
-  };
+ 
 
   return (
     <div>
@@ -86,7 +55,7 @@ function ModalRegister(args) {
         </ModalHeader>
         <form onSubmit={e => {
           e.preventDefault();
-          handleRegister();
+          
         }}>
           <ModalBody>
             <Row>

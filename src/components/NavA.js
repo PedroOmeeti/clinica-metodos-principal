@@ -12,6 +12,7 @@ import {
 import './NavA.components.css';
 import ModalLogin from './ModalLogin';
 import Logo from './img/Logo.png';
+import { FaUser } from "react-icons/fa";
 
 function NavA() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,11 +40,11 @@ function NavA() {
             <NavItem>
               <NavLink id='roter' className='nav-link cor-texto' to="/Contato" activeClassName="active">Contato</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink id='roter' className='nav-link cor-texto' to="/Agende" activeClassName="active">Agende</NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem className='d-flex justify-content-center'>
-            <a href="http://localhost:3001/Login"><ModalLogin /></a>
+            <a  id='' className='text-white' href="http://localhost:3001/Login"><FaUser color='#800100' /></a>
               
             </NavItem>
           </Nav>

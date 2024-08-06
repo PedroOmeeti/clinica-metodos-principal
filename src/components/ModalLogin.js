@@ -26,34 +26,7 @@ function ModalLogin(args) {
   const toggle = () => setModal(!modal);
 
 
-  const handleLogin = async () => {
-    try {
-      const response = await fetch('http://localhost:3010/usuarios/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({"email": username, "senha": password }),
-      });
-      const data = await response.json();
-
-      const token = data.token;
-
-      if(!token) {
-        throw new Error('Token de acesso ausente ou expirado')
-      } else {
-        localStorage.setItem('token', token);
-        if(tokenDecoded.tipo === 6) {
-          navigate('http://localhost:3001');
-        }
-        
-      }
-      console.log(data);
-      
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  
 
   return (
     <div>
@@ -64,7 +37,7 @@ function ModalLogin(args) {
         <ModalHeader toggle={toggle} className='text-center'><FaUserAlt /> Login</ModalHeader>
         <form onSubmit={e => {
           e.preventDefault(); 
-          handleLogin();
+          
         }}>
         <FormGroup>
           <ModalBody>

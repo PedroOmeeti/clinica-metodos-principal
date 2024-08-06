@@ -5,11 +5,10 @@ import { FaChevronLeft, FaChevronRight, FaChalkboardTeacher } from 'react-icons/
 import './CarouselServicos.components.css';
 import { RiPsychotherapyLine, RiComputerLine } from "react-icons/ri";
 import { IoNutritionOutline } from "react-icons/io5";
-import { MdHearing } from "react-icons/md";
+import { MdHearing, MdElderlyWoman, MdGroups, MdOutlinePsychology } from "react-icons/md";
 import { TbPhysotherapist } from "react-icons/tb";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 import { LuStethoscope } from "react-icons/lu";
-import { MdElderlyWoman, MdGroups, MdOutlinePsychology } from "react-icons/md";
 import { GiLovers } from "react-icons/gi";
 import { ImHome } from "react-icons/im";
 import { SlBriefcase } from "react-icons/sl";
@@ -65,7 +64,7 @@ const ServiceCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4, // padrão
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -73,17 +72,28 @@ const ServiceCarousel = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
     ],
@@ -92,7 +102,7 @@ const ServiceCarousel = () => {
   return (
     <div className='mb-5' style={{ position: 'relative', padding: '0 50px' }}>
       <h2 className='text-center mt-5'>Nossos Serviços</h2>
-      <Row >
+      <Row>
         <Col className="fs-4 text-center mb-4 mt-4">A clínica oferece serviços de Psicologia personalizados para suas necessidades pessoais, executados com maestria. Entre em contato hoje mesmo para saber mais sobre os nossos serviços.</Col>
       </Row>
       <Slider {...settings}>

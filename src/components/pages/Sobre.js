@@ -28,7 +28,7 @@ function Sobre() {
   return (
     <Container>
 
-      <Row className='align-items-center mt-5'>
+      <Row className='align-items-center mt-5 p-3'>
         <Col xs="12" md="12" lg="6" className="order-lg-2 order-1">
           <h3 className="mb-2 ti ms-lg-0 ms-4">Sobre Nós</h3>
           <p className='fs-4'>
