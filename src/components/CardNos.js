@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container, Card, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
-import Clinica from './img/imagemGrande.png'
+import Clinica from './img/imagemGrande.jpg'
 import "./CardNos.components.css";
 
 

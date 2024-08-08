@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Row, Col, Container } from 'reactstrap';
-import ImagemGrande from './img/imagemGrande.png'
+import ImagemGrande from './img/imagemGrande.jpg'
 import "./Agendamento.components.css"
 
 const Agendamento = () => {

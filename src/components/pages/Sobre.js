@@ -1,27 +1,27 @@
 import { Col, Container, Row } from "reactstrap";
 import CardNos from "../CardNos";
 import SobreN from '../img/sobrenosfoto.jpg'
-import Janater from '../img/janater.png'
-import Funcionarios from '../img/funcionarios.png'
+import Janater from '../img/janater.jpg'
+import Funcionarios from '../img/funcionarios.jpg'
 import Sala from '../img/sala_jana 1.jpg';
 import "../Sobre.components.css";
 
-import Clinica from '../img/imagemGrande.png'
-import Fisio from '../img/fisio.png'
+import Clinica from '../img/imagemGrande.jpg'
+import Fisio from '../img/fisio.jpg'
 import Fisiom from '../img/fisiom.jpg'
 import Fono from '../img/fono.jpg'
 import Fono2 from '../img/fono2.jpg'
 import Geral from '../img/geral.jpg'
-import Psicologo from '../img/psicologo.png'
-import Psicopedagoga from '../img/psicopedagoga.png'
-import Psicologa from '../img/psicologa.png'
-import Psiquiatra from '../img/psiquiatra.png'
-import Psicologa2 from '../img/psicologa2.png'
-import Psicologa3 from '../img/psicologa3.png'
+import Psicologo from '../img/psicologo.jpg'
+import Psicopedagoga from '../img/psicopedagoga.jpg'
+import Psicologa from '../img/psicologa.jpg'
+import Psiquiatra from '../img/psiquiatra.jpg'
+import Psicologa2 from '../img/psicologa2.jpg'
+import Psicologa3 from '../img/psicologa3.jpg'
 import Janaina from '../img/janaina2.jpg'
 import Yasmim from '../img/yasmim.jpg'
-import Duda from '../img/duda.png'
-import Nutri2 from '../img/nutri2.png'
+import Duda from '../img/duda.jpg'
+
 
 function Sobre() {
 
@@ -125,24 +125,14 @@ function Sobre() {
         </Row>
 
         <Row className="mt-5 d-flex justify-content-center text-center">
-          <Row>
-            <Col>
-            <h1 className="mb-2 ti ms-lg-0 ms-4">Nutrição</h1>
-            </Col>
-            <Col>
-            <h1 className="mb-2 ti ms-lg-0 ms-4">Clinica Geral</h1>
-            </Col>
-          </Row>
           
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+          <h1 className="mb-2 ti ms-lg-0 ms-4">Nutrição</h1>
             <CardNos img={Clinica} especialista="Gabriela Cristina" especialidade="Nutrição" />
           </Col>
 
           <Col xs="6" md="6" lg="6" xl="3" className="col-3">
-            <CardNos img={Nutri2} especialista="Cristina zacardi" especialidade="Nutrição" />
-          </Col>
-
-          <Col xs="6" md="6" lg="6" xl="3" className="col-3">
+          <h1 className="mb-2 ti ms-lg-0 ms-4">Clinica Geral</h1>
             <CardNos img={Geral} especialista="Jéssica Freitas" especialidade="Clínica geral" />
           </Col>
 
