@@ -21,7 +21,7 @@ const CardNos = ({ img, especialista, especialidade }) => {
                     alt="Profissional"
                     src={img}
                 />
-                <CardBody className='titulo mt-3' >
+                <CardBody className='titulo' >
                     <CardTitle
                         className='text-center'
                         tag="h5">
