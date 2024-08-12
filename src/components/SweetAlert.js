@@ -31,7 +31,8 @@ function Sweet() {
       iconColor: '#9D1A1F',
     }).then((result) => {
       if (result.isConfirmed) {
-        navigate('Agende'); // Substitua pelo seu caminho real
+        
+        window.open('https://api.whatsapp.com/send?phone=5512996448045&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta!');
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         console.log('Cancel button clicked');
       }

@@ -38,7 +38,7 @@ function App() {
 
         <Row>
           <Col className="text-center Footer-color p-2">
-            <span className="fs-5">&copy;2024 Copyright - GUPE Desenvolvimento</span>
+            <span className="fs-5">&copy;2024 Copyright - Todos os direitos reservados - Clínica Métodos Pindamonhangaba</span>
           </Col>
         </Row>
       </BrowserRouter>
@@ -65,7 +65,7 @@ function AnimatedRoutes() {
           <Route path="/plano" element={<Plano />} />
           <Route path="/contato" element={<Contato />} />
           {/* <Route path="/agende" element={<Agende />} /> */}
-          <Route path="/adm" element={<Adm />} />
+          
         </Routes>
       </CSSTransition>
     </TransitionGroup>
