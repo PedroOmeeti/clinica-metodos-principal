@@ -64,7 +64,6 @@ function Inicio() {
             <Link className='nav-link fundin fs-4 text-center p-3 rounded-3 my-3 text-white' to='https://api.whatsapp.com/send?phone=5512996448045&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta!' target="_blank">Agende sua Consulta!</Link>
           </Col>    
         </Row>
-        
         <Row>
           <Col>
             <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
