@@ -42,6 +42,11 @@ function Inicio() {
         </Col>
       </Row>
       <Container>
+
+
+  
+
+
         <Row>
           <Col className="text-center">
             <h1 className="mt-5">Cuidando do seu bem-estar </h1>
@@ -53,6 +58,13 @@ function Inicio() {
             <p className="fs-4">A Métodos Clínica foi inaugurada em março de 2020, sendo fundada pela Empresária e Psicóloga Janaina Gomes. Nossa equipe possui profissionais e colaboradores altamente qualificados e comprometidos em oferecer serviços de saúde abrangentes e personalizados. Nosso foco é a saúde mental e emocional da população, proporcionando atendimentos com terapias alternativas e consultas, visando a qualidade de vida. Venha nos visitar e descubra o caminho para uma vida mais saudável e feliz!</p>
           </Col>
         </Row>
+
+        <Row className="mt-5 d-flex justify-content-center">
+          <Col xs="6" md="6" lg="6" className="col-8">
+            <Link className='nav-link fundin fs-4 text-center p-3 rounded-3 my-3 text-white' to='https://api.whatsapp.com/send?phone=5512996448045&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta!' target="_blank">Agende sua Consulta!</Link>
+          </Col>    
+        </Row>
+        
         <Row>
           <Col>
             <img src={Janaina} className="img-fluid Image-height d-block mx-auto my-5 rounded-2" alt="Infra estrutura da clínica" />
@@ -60,7 +72,7 @@ function Inicio() {
         </Row>
       </Container>
 
-      <Container fluid> 
+      <Container fluid>
         <Row>
           <Col>
             <CarouselServicos />

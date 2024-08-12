@@ -43,10 +43,7 @@ function NavA() {
             {/* <NavItem>
               <NavLink id='roter' className='nav-link cor-texto' to="/Agende" activeClassName="active">Agende</NavLink>
             </NavItem> */}
-            <NavItem className='d-flex justify-content-center'>
-            <a  id='' className='text-white' href="http://localhost:3001/Login"><FaUser color='#800100' /></a>
-              
-            </NavItem>
+            
           </Nav>
         </Collapse>
 

@@ -21,22 +21,8 @@ function MenuFooter() {
 ' target="_blank" className='fs-3'><FaWhatsapp /></a>
                         </div>
                     </Row>
-                    <Row className='mt-2'>
-                        <Col>
-                            <a href='#' className='text-white'>Informações </a>
-                            <a href='#' className='text-light'>▪️</a>
-                            <a href='#' className='text-white'> Suporte </a>
-                            <a href='#' className='text-light'>▪️</a>
-                            <a href='#' className='text-white'> Quem somos nós</a>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <a href='#' className='text-white'>Termos de Uso </a>
-                            <a href='#' className='text-light'>▪️</a>
-                            <a href='#' className='text-white'> Politica de Privacidade</a>
-                        </Col>
-                    </Row>
+                 
+                  
                 </Row>
             </Container>
         </div>
