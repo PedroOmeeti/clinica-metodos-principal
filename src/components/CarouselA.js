@@ -9,11 +9,11 @@ import {
 } from 'reactstrap';
 
 
-import Carrosel1 from './img/carrousel1.png'
-import Carrosel2 from './img/psicologo novo.png'
+import Carrosel1 from './img/carrousel1.jpg'
+import Carrosel2 from './img/psicologonovo.jpg'
 
-import Carrosel3 from './img/fonocarrossel.png'
-import Carrosel4 from './img/nutricao.png'
+import Carrosel3 from './img/fonocarrossel.jpg'
+import Carrosel4 from './img/nutricao.jpg'
 import "./CarouselA.components.css"
 
 

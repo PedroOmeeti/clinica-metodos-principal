@@ -19,8 +19,8 @@ import { MdOutlinePsychology } from "react-icons/md";
 import { FaHandsHoldingChild } from "react-icons/fa6";
 
 
-import Sala from '../img/saladeespera.png'
-import recepcao from '../img/recepcao.jpeg'
+import Sala from '../img/saladeespera.jpg'
+import recepcao from '../img/recepcao.jpg'
 
 import { LuStethoscope } from "react-icons/lu";
 import { MdElderlyWoman } from "react-icons/md";
