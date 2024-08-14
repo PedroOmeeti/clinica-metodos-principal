@@ -109,7 +109,7 @@ function Contato() {
             <hr />
 
             <p className="h5">E-mail</p>
-            <p><FaEnvelope className="p-0 text-secondary" /> metodosclinicarecepcao@outlook.com</p>
+            <p><FaEnvelope className="p-0 text-secondary" /> metodosclinica_direcao@outlook.com</p>
             <hr />
             <p className="h4">Nos siga nas redes sociais</p>
             <a id="rede1" className="fs-1" href="https://www.instagram.com/metodosclinica/" target="_blank"><FaInstagram /></a>
