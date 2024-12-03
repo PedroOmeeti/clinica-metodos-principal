@@ -4,22 +4,24 @@ import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 import './Adm.components.css'
 import { Calendar } from '@fullcalendar/core'
 import timeGridPlugin from '@fullcalendar/timegrid'
+import timeGridWeekPlugin from '@fullcalendar/timegrid'
+import timeGridDayPlugin from '@fullcalendar/timegrid'
  
  
 function Calendario() {
-  // Define the `handleDateClick` function for clarity and reusability
-  const handleDateClick = (info) => {
-    alert('Clicked on: ' + info.dateStr);
-    alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-    alert('Current view: ' + info.view.type);
-    info.dayEl.style.backgroundColor = 'red';
-  };
+ const headerToolbar= {
+  left: 'prev,next today',
+  center: 'title',
+  right: 'timeGridWeek,timeGridDay'
+}
  
   return (
     <FullCalendar
-      plugins={[dayGridPlugin, timeGridPlugin]} // Ensure both plugins are included
-      initialView="dayGridWeek"
-      //dateClick={handleDateClick} // Pass the `handleDateClick` function
+      plugins={[dayGridPlugin, timeGridPlugin, timeGridWeekPlugin, timeGridDayPlugin]} // Ensure both plugins are included
+      initialView="timeGridWeek"
+      headerToolbar={headerToolbar}
+      events='https://fullcalendar.io/api/demo-feeds/events.json'
+      locale="pt-br"
     />
   );
 }
